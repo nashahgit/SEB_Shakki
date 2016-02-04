@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,8 +9,10 @@
 	   	<link rel="stylesheet" href="colorbox.css" type="text/css">
 	   	<link rel="stylesheet" type="text/css" href="style.css">
 	   	<link rel="stylesheet" type="text/css" href="homepage.min.css">
+	   	<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/dist/css/bootstrap-responsive-tabs.css">
 	   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	   	<script src="responsive-tabs.js"></script>
 
 	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
@@ -83,7 +85,7 @@
             	</div>
             	<!-- Carousel
     			================================================== -->
-			    <div id="myCarousel" class="carousel slide margin-bottom-10" data-ride="carousel">
+			    <div id="myCarousel" class="carousel slide margin-bottom-20" data-ride="carousel">
 			      <!-- Indicators -->
 			      <!--ol class="carousel-indicators">
 			        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -129,14 +131,14 @@
 			        <span class="sr-only">Next</span>
 			      </a>
 			    </div><!-- /.carousel -->
-			    <div class="container ">
+			    <div class="container margin-bottom-20">
 			    	<div class="row">
-			    		<div class="col-sm-4">
+			    		<div class="col-sm-4 three-cards">
 				    		<div class="card">
-				    		  	<div class="card-block">
+				    		  	<div class="card-block top">
 								    <h3 class="card-title">Build a Plan</h3>
 							  	</div>
-							  	<img class="img-responsive" src="http://24.media.tumblr.com/e7ef5aab5f3e0073eb471c4c82a566b6/tumblr_mzm8m3EWU71qkhaito1_500.jpg" width="100%" alt="Card image">
+							  	<img class="img-responsive" src="spider_web.jpg" width="100%" alt="Card image">
 								<div class="card-block">
 								   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								   <a href="#" class="card-link">Card link</a>
@@ -144,12 +146,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-4 three-cards top">
 				    		<div class="card">
-				    		  	<div class="card-block">
+				    		  	<div class="card-block top">
 								    <h3 class="card-title">Operate an Institution</h3>
 							  	</div>
-							  	<img class="img-responsive" src="http://24.media.tumblr.com/e7ef5aab5f3e0073eb471c4c82a566b6/tumblr_mzm8m3EWU71qkhaito1_500.jpg" width="100%" alt="Card image">
+							  	<img class="img-responsive" src="spider_web.jpg" width="100%" alt="Card image">
 								<div class="card-block">
 								   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								   <a href="#" class="card-link">Card link</a>
@@ -157,12 +159,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-4 three-cards">
 				    		<div class="card">
-				    		  	<div class="card-block">
+				    		  	<div class="card-block top">
 								    <h3 class="card-title">Transfer Knowledge</h3>
 							  	</div>
-							  	<img class="img-responsive" src="http://24.media.tumblr.com/e7ef5aab5f3e0073eb471c4c82a566b6/tumblr_mzm8m3EWU71qkhaito1_500.jpg" width="100%" alt="Card image">
+							  	<img class="img-responsive" src="spider_web.jpg" width="100%" alt="Card image">
 								<div class="card-block">
 								   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 								   <a href="#" class="card-link">Card link</a>
@@ -171,11 +173,64 @@
 							</div>
 						</div>
 					</div>
-				</dvi>
+				</div>
+				<div class="container margin-bottom-20">
+					<div class="row ">
+						<div class="col-sm-7" id="myTab">
+							<h3>CONSULTING</h3>
+							<ul class="nav nav-tabs responsive" >
+						        <li class="test-class active"><a class="deco-none red-class" href="#resp-tab1">EDUCATION CONSULTING</a></li>
+						        <li class="test-class"><a href="#resp-tab2">UNIVERSITY AFFILIATIONS</a></li>
+						        <li><a class="deco-none" href="#resp-tab3">UNIVERSITY ADMISSION</a></li>
+						    </ul>
+						    <div class="tab-content responsive">
+			    		        <div class="tab-pane active" id="resp-tab1">
+						        	<img class="my-img" src="coaching.png" alt="consulting image">
+						           	<p>Tab 1 ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere tortor. Phasellus consectetur aliquet risus, in lacinia erat ullamcorper a. Suspendisse molestie porta metus, at cursus elit. Quisque et neque nec velit tincidunt fringilla. 
+						           	</p>
+						        </div>
+						        <div class="tab-pane" id="resp-tab2">
+						        	<img class="my-img" src="university.png" alt="consulting image">
+						        	<p>Tab 2 ... Phasellus consectetur aliquet risus, in lacinia erat ullamcorper a. Suspendisse molestie porta metus, at cursus elit. Quisque et neque nec velit tincidunt fringilla. Morbi eget nisi molestie, egestas turpis non, pharetra orci. Donec mattis sem ipsum, eu dapibus lacus rutrum in. Fusce blandit mi leo, non feugiat nunc tempus vitae. </p>
+						        </div>
+						        <div class="tab-pane" id="resp-tab3">
+						        	<img class="my-img" src="admission.png" alt="consulting image">
+						        	<p>Tab 3 ... Quisque et neque nec velit tincidunt fringilla. Morbi eget nisi molestie, egestas turpis non, pharetra orci. Donec mattis sem ipsum, eu dapibus lacus rutrum in. Fusce blandit mi leo, non feugiat nunc tempus vitae. Mauris hendrerit, leo sit amet mollis bibendum, lacus augue auctor turpis, sed placerat augue libero quis massa. 
+						        	</p>
+						        </div>
+						    </div>
+					    </div>
+					    <div class="col-sm-5" id="seminars">
+					    	<div class="card"> 
+					    		<div class="card-block">
+								    <h3 class="card-title">SEMINARS</h3>
+							  	</div>
+							  	<div class="card-block">
+								   <li class="card-text">Certified Management Accounting (CMA) 7 Days Program.</li>
+								   <li class="card-text">Certified Global Business Analyst (CGBA) Program.</li>
+								   <li class="card-text">International Financial Reporting Standards (IFRS).</li>
+								   <li class="card-text">Islamic Banking and Finance.</li>
+								   <li class="card-text">Risk Management Program.</li>
+								</div>
+					    	</div>
+					    </div>
+					</div>
+				</div>
 	  		</div>
 	  	</div>
-
+	  	
 	  	<script type="text/javascript">
+
+	  		  $( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
+		        e.preventDefault();
+		        $( this ).tab( 'show' );
+		      } );
+
+		      ( function( $ ) {
+		          // Test for making sure event are maintained
+		          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+		      } )( jQuery );
+
 	  		$(function(){
 				var $window = $(window);		//Window object
 				var scrollTime = 1;			//Scroll time

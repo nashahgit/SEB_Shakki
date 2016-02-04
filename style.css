@@ -11,6 +11,10 @@ body{
     background-image:  url(logo_x_pattern/logo_x_pattern.png);
 }
 
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
 #seb-wrap{
 	min-height:100%
 }
@@ -151,7 +155,7 @@ div#myCarousel {
     float: right;
 }
 
-.card {
+.three-cards>.card {
     position: relative;
     display: block;
     margin-bottom: .75rem;
@@ -162,16 +166,78 @@ div#myCarousel {
     border-radius: .25rem;
 }
 
-.card-block {
-    font-family: "Merriweather", serif;
-    font-style: italic;
+.three-cards>.card>.card-block {
+    /*ont-family: "Merriweather", serif;*/
     padding: 1.25rem;
+}
+
+.three-cards>.card>.card-block>h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.three-cards>.card>.top {
+    background-color: rgb(19, 99, 111)
 }
 
 .small-owl {
     position: absolute;
     width: 55px;
     display: none;
+}
+
+#myTab {
+    background-color: rgba(246, 245, 247, 0.7);
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    margin-bottom: 10px;
+}
+
+#myTab > h3 {
+    color: black;
+}
+
+.tab-content>.tab-pane {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#myTab>.nav-tabs>li>a {
+
+}
+
+.my-img {
+    width: 80px;
+    padding: 5px;
+    margin-right: 20px;
+    float: left;
+}
+
+#seminars>.card {
+    padding: 15px;
+    background-color: #c43235; /*rgba(88, 13, 87, 0.81);*/
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+}
+
+#seminars>.card>.card-block>h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+#seminars>.card>.card-block>li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+#seminars>.card>.card-block>li:before {
+    content: '\f006';
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    float: left;
+    margin-right: 5px;
+    color: #0074D9;
 }
 
 
@@ -232,6 +298,15 @@ div#myCarousel {
         display: none;
     }
 
+    #myTab {
+        padding: 10px 10px 10px 10px;
+        margin: 0 15px 15px 15px;
+    }
+
+    .my-img {
+        display: none;
+    }
+
     body {
         background-color: yellow;
     }
@@ -239,7 +314,7 @@ div#myCarousel {
 
 @media (max-width:991px) {
 
-        body {
+    body {
         background-color: green;
     }
 }
@@ -271,6 +346,10 @@ div#myCarousel {
         padding-bottom: 70px;
     }
 
+    .my-img {
+        display: none;
+    }
+
     body {
         background-color: red;
     }
@@ -290,7 +369,6 @@ div#myCarousel {
         left: 20%;
         padding-bottom: 30px;
     }
-
 }
 
 @media (min-width:768px)and (max-width:991px) {
@@ -298,13 +376,17 @@ div#myCarousel {
 }
 
 @media (min-width:992px) {
+
     
 }
 
 @media (min-width:992px)and (max-width:1199px) {
-
+    
+    .my-img {
+        
+    }
 }
 
 @media (min-width:1200px) {
-
+   
 }
