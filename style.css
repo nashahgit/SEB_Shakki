@@ -11,6 +11,8 @@ body{
     background-image:  url(logo_x_pattern/logo_x_pattern.png);
 }
 
+
+
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
@@ -186,20 +188,22 @@ div#myCarousel {
     display: none;
 }
 
-#myTab {
+#myTab>.card {
+    padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
-    margin-bottom: 10px;
+    
 }
 
-#myTab > h3 {
+#myTab>.card>.card-block>h3 {
+    margin-top: 10px;
     color: black;
 }
 
 .tab-content>.tab-pane {
     background-color: white;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 #myTab>.nav-tabs>li>a {
@@ -213,7 +217,13 @@ div#myCarousel {
     float: left;
 }
 
+#seminars {
+    height: auto;
+    background-color: #A6A0A7;
+}
+
 #seminars>.card {
+    margin-top: 10px;
     padding: 15px;
     background-color: #c43235; /*rgba(88, 13, 87, 0.81);*/
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
@@ -372,21 +382,40 @@ div#myCarousel {
 }
 
 @media (min-width:768px)and (max-width:991px) {
+      .my-img {
+        display: none;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
 
 }
 
 @media (min-width:992px) {
 
-    
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
 @media (min-width:992px)and (max-width:1199px) {
     
-    .my-img {
-        
-    }
+  
 }
 
 @media (min-width:1200px) {
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
    
 }
