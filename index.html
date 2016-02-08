@@ -224,7 +224,7 @@
 						<div class="col-sm-12" id="jobs">
 							<div class="card"> 
 					    		<div class="card-block">
-								    <h3 class="card-title">Hot Jobs</h3>
+								    <h3 class="card-title">Smart Jobs</h3>
 								    <p class="card-text job-desc"><span>Job ID : </span> J1001 <br>
 								    <span>Job Role : </span> Software Developer <br>
 								    <span>Job Description : </span> Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. <br> </p>
@@ -235,20 +235,54 @@
 					    </div>
 					</div>
 				</div>
+				<div id="footer" class="clearfix footer" role="contentinfo">
+					<div id="global-footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 logo-left">
+									<div id="footer-logo">
+										<div class="footer-owl" >
+							    			<img src="smg_logo_orig_2.png" width="80px" height="80px">
+							    		</div>
+							    		<ul>
+											<li class="active"><a href="#">HOME</a></li>
+											<li class="active"><a href="#">ABOUT</a></li>
+											<li class="active"><a href="#">SERVICES</a></li>
+											<li class="active"><a href="#">CONTACT</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-6 logo-right">
+									<div class="social">
+										<img src="googleplus.png">
+							    		<img src="twitter.png">
+							    		<img src="youtube.png">
+							    		<img src="facebook.png">
+						    		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="scrollup">
+					<a href="#"></a>
+				</div>
 	  		</div>
 	  	</div>
 	  	
 	  	<script type="text/javascript">
 
-	  		  $( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
-		        e.preventDefault();
-		        $( this ).tab( 'show' );
-		      } );
+	  	$(document).ready(function () {
 
-		      ( function( $ ) {
-		          // Test for making sure event are maintained
-		          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
-		      } )( jQuery );
+	  		$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
+		    	e.preventDefault();
+		        $( this ).tab( 'show' );
+		    } );
+
+		    ( function( $ ) {
+		        /* Test for making sure event are maintained */
+		        fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+		    } )( jQuery );
 
 	  		$(function(){
 				var $window = $(window);		//Window object
@@ -278,13 +312,39 @@
   				$(window).scroll(function(){
 	    			var aTop = $('#header').height();
 	    			if($(this).scrollTop()>=aTop){
-	        			$(".small-owl").show('100');
+	        			$(".small-owl").fadeIn('slow');
 	    			}
 	    			else {
-	    				$(".small-owl").hide('100');
+	    				$(".small-owl").fadeOut('slow');
 	    			}
   				});
 			});
+			/* code for hiding the top nav bar when reached the bottom */
+	  		window.onscroll = function(ev) {
+			    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			    	$('.navbar').fadeOut('slow');
+			    }
+			    else {
+			    	$('.navbar').fadeIn('slow');
+			    }
+			};
+
+			$(window).scroll(function () {
+		        if ($(this).scrollTop() > 700) {
+		            $('.scrollup').fadeIn();
+		        } else {
+		            $('.scrollup').fadeOut();
+		        }
+		    });
+
+		    $('.scrollup').click(function () {
+		        $("html, body").animate({
+		            scrollTop: 0
+		        }, 600);
+		        return false;
+		    });
+
+		});
 	  	</script>
 
   	</body>

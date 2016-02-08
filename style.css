@@ -235,13 +235,14 @@ div#myCarousel {
     height: auto;
     background-color: #18569C;
     margin-right: 15px;
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
 }
 
 #seminars>.card {
     margin-top: 10px;
     padding: 15px;
-    background-color: #18569C/*rgba(88, 13, 87, 0.81);*/
-    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    /*background-color: #18569C;*/
+    /*box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);*/
 }
 
 #seminars>.card>.card-block>h3 {
@@ -281,6 +282,10 @@ div#myCarousel {
     color: #18569C;
 }
 
+#jobs>.card>.card-block>a {
+    font-family: "Merriweather", serif;
+}
+
 .job-desc {
     margin-top: 10px;
     font-family: "Merriweather", serif;
@@ -295,6 +300,88 @@ div#myCarousel {
     font-weight: 700;
     color: #18569C;
 }
+
+#footer {
+    background-color: #044084;
+}
+
+#global-footer {
+    padding: 20px;
+}
+
+#global-footer .logo-left {
+    display : flex;
+    margin-left: 50px;
+}
+
+#footer-logo {
+        display: flex;
+}
+
+#global-footer ul {
+    list-style-type:none;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+#global-footer ul a {
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-owl {
+    width: 90px;
+    display: block;
+    padding: 5px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #FDFAFA;
+}
+
+.social {
+    margin: 20px;
+    float: right;
+}
+
+#global-footer .logo-right {
+    margin-right: 50px;
+}
+
+.social img {
+    width: 40px;
+}
+
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+    display: none;
+    background-color: #DC0F0F;
+    border-radius : 100%;
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+}
+
+.scrollup>a {
+    margin: auto; 
+    color: white;
+    text-decoration: none;
+}
+
+.scrollup>a:before {
+   margin-left: 16px;
+   font-family: FontAwesome;
+   font-size: 30px;
+   content: "\f062";
+   vertical-align:middle;
+   text-align: center;
+   line-height: 55px;
+}
+
+
 
 @media (max-width:767px) {
 
@@ -358,8 +445,37 @@ div#myCarousel {
         margin: 0 15px 15px 15px;
     }
 
+    #seminars {
+        margin-left: 15px;
+    }
+
     .my-img {
         display: none;
+    }
+
+    #footer-logo {
+        float: none;
+        margin: auto;
+    }
+
+    #global-footer .logo-left {
+        margin-left: 0px;
+    }
+
+    #global-footer .logo-right {
+        margin-right: 0px;
+        float: none;
+    }
+
+    .social {
+        display: block;
+        float: none;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .social img {
+        width: 30px;
     }
 
     body {
