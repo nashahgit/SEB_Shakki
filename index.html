@@ -20,6 +20,7 @@
 	        
 	</head>
   	<body>
+  		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="loader.gif"></div>
 	  	<div id="seg-wrap">
 	  		<div id="seg-ccontent">
 	  			<div id="header" class="clearfix" role="banner">
@@ -261,6 +262,11 @@
 						    		</div>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<p id="copy-right">&copy; Smart Education Group. Dubai, UAE.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -272,7 +278,15 @@
 	  	
 	  	<script type="text/javascript">
 
+
 	  	$(document).ready(function () {
+
+	  		document.getElementById("hideAll").style.display = "block";
+
+		  	window.onload = function() { 
+		  		document.getElementById("hideAll").style.display = "none"; 
+		  	}
+
 
 	  		$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
 		    	e.preventDefault();
