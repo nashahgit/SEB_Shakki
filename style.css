@@ -115,7 +115,7 @@ div#myCarousel {
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
-    max-width: 1366px;
+    max-width: 100%;/*1366px;*/
     height: auto;
 }
 
@@ -357,7 +357,7 @@ div#myCarousel {
     width: 60px;
     height: 60px;
     position: fixed;
-    bottom: 130px;
+    bottom: 50px;
     right: 50px;
     display: none;
     background-color: #DC0F0F;
@@ -449,9 +449,9 @@ div#myCarousel {
         font-size: 40px;
     }
 
-    .carousel-inner .item {
-        margin: 0 -18em 0 -18em;
-    }
+    /*.carousel-inner .item {
+        margin: 0 -3em 0 -3em;
+    }*/
 
     .carousel-caption {
         right: 40%;
@@ -541,9 +541,9 @@ div#myCarousel {
         font-size: 35px;
     }
 
-    .carousel-inner .item {
-        margin: 0 -45em 0 -45em;
-    }
+    /*.carousel-inner .item {
+        margin: 0 -4em 0 -3em;
+    }*/
 
     .carousel-caption {
         right: 42%;
