@@ -11,7 +11,19 @@ body{
     background-image:  url(logo_x_pattern/logo_x_pattern.png);
 }
 
-
+#form-button {
+    position: fixed;
+    top: 200px;
+    left: -2px;
+    width: auto;
+    height: auto;
+    font-family: "Merriweather", serif;
+    font-size: 12px;
+    background-color: #DC0F0F;
+    z-index: 999;
+    border-color: rgb(220, 15, 15);
+    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+}
 
 .margin-bottom-20 {
     margin-bottom: 20px;
@@ -512,6 +524,10 @@ div#myCarousel {
         right: 40px;
     }
 
+    #form-button {
+        font-size: 10px;
+    }
+
     body {
         background-color: yellow;
     }
@@ -577,6 +593,11 @@ div#myCarousel {
 }
 
 @media (min-width:768px)and (max-width:991px) {
+
+    #logo img {
+        max-width: 55%;
+    }
+
       .my-img {
         display: none;
     }
