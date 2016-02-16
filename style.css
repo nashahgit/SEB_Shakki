@@ -421,6 +421,12 @@ div#myCarousel {
     text-align: center;
 }
 
+.btn-success {
+    color: #fff;
+    background-color: #0D6DBB;
+    border-color: #3958B5;
+}
+
 
 @media (max-width:767px) {
 
