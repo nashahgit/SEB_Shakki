@@ -197,7 +197,7 @@ div#myCarousel {
 .three-cards>.card>.card-block>h3 {
     margin-top: 10px;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .three-cards>.card>.top {
@@ -425,6 +425,39 @@ div#myCarousel {
     color: #fff;
     background-color: #0D6DBB;
     border-color: #3958B5;
+}
+
+#aboutus>.card {
+    padding: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: rgba(246, 245, 247, 0.7);
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    
+}
+
+#aboutus>.card>.card-block>h3 {
+    margin-top: 10px;
+    font-family: "Merriweather", serif;
+    font-size: 22px;
+    color: #18569C;
+}
+
+#aboutus>.card>.card-block>p {
+    font-size: 16px;
+}
+
+#team>.card {
+    padding: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: rgba(246, 245, 247, 0.7);
+    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    
+}
+
+.conference {
+    display: none;
 }
 
 
