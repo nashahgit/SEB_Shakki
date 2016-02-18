@@ -23,73 +23,6 @@
   	<body>
   		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="loader.gif"></div>
 
-  		<!-- form button-->
-  		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
-	    	ContactUS
-		</button>
-
-		<!-- Modal start -->
-		<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		    <div class="modal-dialog">
-		        <div class="modal-content">
-		            <!-- Modal Header -->
-		            <div class="modal-header">
-		                <button type="button" class="close" data-dismiss="modal">
-		                    <span aria-hidden="true">&times;</span>
-		                    <span class="sr-only">Close</span>
-		                </button>
-		                <h3 class="modal-title" id="myModalLabel">
-		                    Contact Us
-		                </h3>
-		            </div>
-		            
-		            <!-- Modal Body -->
-		            <div class="modal-body">
-		                <div class="row">
-							<div class="col-sm-12">
-							    <form role="form" id="contactForm">
-							     	<div class="form-group col-sm-12">
-							            <!--label for="name" class="h4">Name</label-->
-							            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="company" class="h4">Company</label-->
-							            <input type="text" class="form-control" id="company" placeholder="Company name" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="designation" class="h4">Designation</label-->
-							            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="designation" class="h4">Designation</label-->
-							            <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="email" class="h4">Email</label-->
-							            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="designation" class="h4">Designation</label-->
-							            <input type="text" class="form-control" id="country" placeholder="Country" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="designation" class="h4">Designation</label-->
-							            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-							        </div>
-							        <div class="form-group col-sm-12">
-							            <!--label for="message" class="h4 ">Message</label-->
-							            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-							        </div>
-							        <button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>
-									<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
-							    </form>
-							</div>
-						</div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
 	  	<div id="seg-wrap">
 	  		<div id="seg-ccontent">
 	  			<div id="header" class="clearfix" role="banner">
@@ -113,7 +46,7 @@
 						    		</div>
 						          	<ul class="nav navbar-nav navbar-right">
 						            	<li><a href="index.html">HOME</a></li>
-						            	<li class="active"><a href="about.html">ABOUT</a></li>
+						            	<li><a href="about.html">ABOUT</a></li>
 						            	<li><a href="partners.html">PARTNERS</a></li>
 						            	<li class="dropdown">
 						            		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICE<span class="caret"></span></a>
@@ -127,7 +60,7 @@
 									                <li><a href="#">More separated link</a></li-->
 									              </ul>
 						            	</li>
-							            <li><a href="contact.html">CONTACT</a></li>
+							            <li class="active"><a href="contact.html">CONTACT</a></li>
 							            
 						          	</ul>
 						        </div><!--/.nav-collapse -->
@@ -154,34 +87,135 @@
 			            </div>
             		</div>
             	</div>
-            					
+            	<!-- Carousel
+    			================================================== -->
 				<div class="container margin-bottom-20">
 					<div class="row">
-						<div class="col-sm-12" id="aboutus">
+						<div class="col-sm-12" id="jobs">
 							<div class="card"> 
 					    		<div class="card-block">
-								    <h2 class="card-title panel-heading">About US</h2>
-								    <br>
-								    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+								    <h2 class="card-title panel-heading">Contact</h2>
+								    <div class="row">
+								    	<div class="col-sm-4">
+											<div class="panel">
+												<div class="panel-heading">
+													<h3><i class="icon-pushpin main-color"></i> Our office</h3>
+												</div>
+												<div class="panel-body">
+													<address>
+													<strong>Smart Education Group.</strong><br>
+													123 Address Not Updated<br>
+													Sorry, U.A.E.<br>
+													<i class="icon-phone-sign"></i> + (971) 52 67 47 153
+													<br>
+													<i class="icon-phone-sign"></i> + (971) 55 10 62 083
+													</address>
+												</div>
+											</div>
+			
+											<div class="panel">
+												<div class="panel-heading">
+												  <h3><i class="icon-time main-color"></i> Business hours</h3>
+												</div>
+												<div class="panel-body">
+													<table class="table table-hover">
+														<thead>
+															<tr>
+															    <th>Day</th>
+																<th>Time</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr class="success">
+															  <td>Monday</td>
+															  <td>9:00 to 18:00</td>
+															</tr>
+															<tr class="success">
+															  <td>Tuesday</td>
+															  <td>9:00 to 18:00</td>
+															</tr>
+															<tr class="success">
+															 
+															  <td>Wednesday</td>
+															  <td>9:00 to 18:00</td>
+															</tr>
+															<tr class="success">
+															 
+															  <td>Thursday</td>
+															  <td>9:00 to 18:00</td>
+															</tr>
+															<tr class="success">
+															 
+															  <td>Friday</td>
+															  <td>9:00 to 18:00</td>
+															</tr>
+															<tr class="warning">
+															
+															  <td>Saturday</td>
+															  <td>9:00 to 14:00</td>
+															</tr>
+															<tr class="danger">
+															
+															  <td>Sunday</td>
+															  <td>day off</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="panel">
+												<div class="panel-heading">	
+													<h3 class="">
+														<i class="icon-envelope main-color"></i>
+														Feel free to contact us
+													</h3>
+												</div>
+												<div class="panel-body">	
+												    <form role="form" id="contactForm">
+												     	<div class="form-group col-sm-12">
+												            <!--label for="name" class="h4">Name</label-->
+												            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="company" class="h4">Company</label-->
+												            <input type="text" class="form-control" id="company" placeholder="Company name" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="designation" class="h4">Designation</label-->
+												            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="designation" class="h4">Designation</label-->
+												            <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="email" class="h4">Email</label-->
+												            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="designation" class="h4">Designation</label-->
+												            <input type="text" class="form-control" id="country" placeholder="Country" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="designation" class="h4">Designation</label-->
+												            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+												        </div>
+												        <div class="form-group col-sm-12">
+												            <!--label for="message" class="h4 ">Message</label-->
+												            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+												        </div>
+												        <button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>
+														<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+										    		</form>
+										    	</div>
+										    </div>
+										</div>
 
-								    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-  								</div>
-  							</div>
-					    </div>
-					</div>
-				</div>
-				<div class="container margin-bottom-20">
-					<div class="row">
-						<div class="col-sm-12" id="team">
-							<div class="card"> 
-					    		<div class="card-block">
-								    <h3 class="card-title">Management Team</h3>
-								    <br>
-								    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-								    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-  								</div>
-  							</div>
+									</div>
+							  	</div>
+							</div>
 					    </div>
 					</div>
 				</div>
@@ -306,6 +340,26 @@
 		        }, 600);
 		        return false;
 		    });
+
+		    switchIn = function () {
+			    $('.seminar').fadeToggle(function() {
+			        $('.conference').fadeToggle(function() {
+			            setTimeout(function() {switchOut();}, 3500);
+			        });
+			    });
+			    
+			}
+
+			switchOut = function () {
+			    $('.conference').fadeToggle(function() {
+			        $('.seminar').fadeToggle(function() {
+			            setTimeout(function() {switchIn();}, 3500);
+			        });
+			    });
+
+			}
+
+			setTimeout(function() {switchIn();}, 3500);
 
 		});
 	  	</script>
