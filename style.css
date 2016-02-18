@@ -250,10 +250,17 @@ div#myCarousel {
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
 }
 
-#seminars>.card {
-    margin-top: 10px;
+#seminars>.seminar {
+    margin-top: 15px;
     padding: 15px;
-    /*background-color: #18569C;*/
+    background-color: #840381;
+    /*box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);*/
+}
+
+#seminars>.conference {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #AD200C;
     /*box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);*/
 }
 
