@@ -17,7 +17,7 @@
 
 	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-	   	<!--script src="aliya.js"></script-->
+	   	<script src="script.js"></script>
 	        
 	</head>
   	<body>
@@ -156,7 +156,7 @@
             	</div>
 				<div class="container margin-bottom-20">
 					<div class="row">
-						<div class="col-sm-12" id="jobs">
+						<div class="col-sm-12" id="about">
 							<div class="card"> 
 					    		<div class="card-block">
 								    <h2 class="card-title panel-heading">About US</h2>
@@ -230,91 +230,5 @@
 				</div>
 	  		</div>
 	  	</div>
-	  	
-	  	<script type="text/javascript">
-
-
-	  	$(document).ready(function () {
-
-	  		document.getElementById("hideAll").style.display = "block";
-
-		  	window.onload = function() { 
-		  		document.getElementById("hideAll").style.display = "none"; 
-		  	}
-
-
-	  		$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
-		    	e.preventDefault();
-		        $( this ).tab( 'show' );
-		    } );
-
-		    ( function( $ ) {
-		        /* Test for making sure event are maintained */
-		        fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
-		    } )( jQuery );
-
-	  		$(function(){
-				var $window = $(window);		//Window object
-				var scrollTime = 1;			//Scroll time
-				var scrollDistance = 170;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
-				
-				$window.on("mousewheel DOMMouseScroll", function(event){
-					
-					event.preventDefault();	
-													
-					var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-					var scrollTop = $window.scrollTop();
-					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-						
-					TweenMax.to($window, scrollTime, {
-						scrollTo : { y: finalScroll, autoKill:true },
-							ease: Power1.easeOut,	//For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
-							autoKill: true,
-							overwrite: 5							
-						});
-								
-				});
-				
-			});
-	  		/* Code for showing the small owl on scroll  */
-	  		$(function(){
-  				$(window).scroll(function(){
-	    			var aTop = $('#header').height();
-	    			if($(this).scrollTop()>=aTop){
-	        			$(".small-owl").fadeIn('slow');
-	    			}
-	    			else {
-	    				$(".small-owl").fadeOut('slow');
-	    			}
-  				});
-			});
-			/* code for hiding the top nav bar when reached the bottom */
-	  		window.onscroll = function(ev) {
-			    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-			    	$('.navbar').fadeOut('slow');
-			    }
-			    else {
-			    	$('.navbar').fadeIn('slow');
-			    }
-			};
-
-			$(window).scroll(function () {
-		        if ($(this).scrollTop() > 400) {
-		            $('.scrollup').fadeIn();
-		        } else {
-		            $('.scrollup').fadeOut();
-		        }
-		    });
-
-		    $('.scrollup').click(function () {
-		        $("html, body").animate({
-		            scrollTop: 0
-		        }, 600);
-		        return false;
-		    });
-
-		});
-	  	</script>
-
-  	</body>
+	</body>
 </html>
