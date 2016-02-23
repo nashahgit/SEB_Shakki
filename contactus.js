@@ -2,13 +2,19 @@
     // Initiate Variables With Form Content
     formProcess();
     var name = $("#name").val();
+    var company = $("#company").val();
+    var designation = $("#designation").val();
+    var mobile = $("#mobile").val();
     var email = $("#email").val();
+    var country = $("#country").val();
+    var subject = $("#subject").val();
     var message = $("#message").val();
  
     $.ajax({
         type: "POST",
         url: "sendmail.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
+        data: "name=" + name +"&company=" + company + "&designation=" + designation + "&mobile=" + mobile + "&email=" + email + "&country=" + country + 
+              "&subject=" + subject + "&message=" + message, 
         success : function(text){
             if (text == "success"){
                 console.log("here I am success $text");
@@ -30,6 +36,9 @@ function formProcess(){
 }
 
 function formSuccess(){
+    $('#contactForm').each(function(){
+        this.reset();
+    });
     $("#msgprocess").addClass("hidden");
     $( "#msgSubmit" ).removeClass( "hidden" );
 }
