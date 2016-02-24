@@ -12,17 +12,17 @@
  
     $.ajax({
         type: "POST",
-        url: "sendmail.php",
+        url: "/SEB_Shakki/sendmail.php",
         data: "name=" + name +"&company=" + company + "&designation=" + designation + "&mobile=" + mobile + "&email=" + email + "&country=" + country + 
               "&subject=" + subject + "&message=" + message, 
         success : function(text){
             if (text == "success"){
-                console.log("here I am success $text");
+                console.log("success");
                 formSuccess();
             }
             else
             {
-                console.log("here I am not success :" );
+                console.log("not success :" );
                 console.log(text);
             }
         }

@@ -17,6 +17,12 @@
 				
 				return $result;
 			}
+
+			public function delete($query) {				
+				$result = $this->connection->query($query);
+				
+				return $result;
+			}
 			
 			public function select($query) {							
 				$result = $this->connection->query($query);
