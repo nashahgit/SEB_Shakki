@@ -1,4 +1,6 @@
 <?php
+require 'PHPMailer-master/class.phpmailer.php';
+require 'PHPMailer-master/class.smtp.php';
 require 'PHPMailer-master/PHPMailerAutoload.php';
 
 $name = $_POST["name"];
@@ -20,8 +22,8 @@ $codescafeMail->SMTPSecure = 'tls';
 // or try these settings (worked on XAMPP and WAMP):
 // $codescafeMail->Port = 587;
 // $codescafeMail->SMTPSecure = 'tls';
-$codescafeMail->Username = "nashah25@gmail.com";
-$codescafeMail->Password = "passports4$";
+$codescafeMail->Username = "educationsmart24@gmail.com";
+$codescafeMail->Password = "passports";
 
 $codescafeMail->IsHTML(true); // For HTML formatted mails
 $codescafeMail->SingleTo = true; 

@@ -1,6 +1,18 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic);
 
+@font-face {
+    font-family: MoonLight;
+    src: url(MoonLight.otf);
+}
+
+@font-face {
+    font-family: MoonBold;
+    src: url(MoonBold.otf);
+}
+
+
+
 body{
 	font-family:'Source Sans Pro',Arial,sans-serif;
 	/*font-family: 'Quicksand', sans-serif;*/
@@ -71,13 +83,14 @@ body{
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-family: "Merriweather", serif;
-    font-size: 14px;
+    font-family: MoonBold;/* "Merriweather", serif;*/
+    font-size: 15px;
 	color: white;
 }
 
 .navbar-default .navbar-nav>li>ul>li>a {
-    font-family: "Merriweather", serif;
+    font-family: MoonLight;
+    font-weight: 800;
     font-size: 14px;
     color: #044084;
 }
@@ -106,6 +119,10 @@ body{
 
 .navbar-toggle {
     border-radius: 0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: rgba(231, 231, 231, 0);
 }
 
 .camera_nav {
@@ -461,7 +478,6 @@ div#myCarousel {
     background-color: #fff;
     border: 1px solid #A4C1E2;
     font-family: "Merriweather", serif;
-    color: #18569C;
 }
 
 .panel-heading {
@@ -475,6 +491,23 @@ div#myCarousel {
     padding: 10px 30px;
 }
 
+.tagline {
+    margin-top: -15px;
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+    background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: linear-gradient(to right, rgb(18, 41, 64) 0%, rgb(8, 100, 206) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+}
+
+.tagline h1 {
+    font-family: MoonLight;
+    color: white;
+    text-align: center;
+}
 
 @media (max-width:767px) {
 
@@ -580,6 +613,14 @@ div#myCarousel {
 
     #form-button {
         font-size: 10px;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #F9F9F9;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: #F9F9F9;
     }
 
     body {
