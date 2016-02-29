@@ -309,7 +309,7 @@ div#myCarousel {
     color: #f5f5f5;
 }
 
-#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card{
+#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card{
     padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
@@ -511,7 +511,20 @@ div#myCarousel {
     color: #044084;
 }
 
-#resp-tab1, #resp-tab2 {
+#team-tab1, #team-tab2 {
+    padding: 15px;
+    font-size: 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#board h4 {
+    text-align: center;
+    color: #044084;
+}
+
+#board-tab1, #board-tab2, #board-tab3, #board-tab4, #board-tab5, #board-tab6 {
     padding: 15px;
     font-size: 14px;
     border-left: 1px solid #ddd;
@@ -637,6 +650,22 @@ div#myCarousel {
     #manage-team img{
         width: 50%;
         margin: 0 auto;
+    }
+
+    #team h4 {
+        font-size: 14px;
+    }
+
+    #team a {
+        text-decoration: none;
+    }
+
+    #board h4 {
+        font-size: 14px;
+    }
+
+    #board a {
+        text-decoration: none;
     }
 
     body {
