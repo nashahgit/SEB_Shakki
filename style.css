@@ -248,7 +248,7 @@ div#myCarousel {
 
 .tab-content>.tab-pane {
     font-family: "Merriweather", serif;
-    font-size: 12px;
+    /*font-size: 12px;*/
     background-color: white;
     margin-bottom: 20px;
     padding: 5px;
@@ -309,14 +309,14 @@ div#myCarousel {
     color: #f5f5f5;
 }
 
-#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card, #services>.card{
+#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card, #services>.card, #main-partners>.card{
     padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
     
 }
 
-#jobs>.card>.card-block>h3, #about>.card>.card-block>h3, #partners>.card>.card-block>h3, #contact-us>.card>.card-block>h3 #services>.card>.card-block>h3 {
+#jobs>.card>.card-block>h3, #about>.card>.card-block>h3, #partners>.card>.card-block>h3, #contact-us>.card>.card-block>h3, #services>.card>.card-block>h3, #main-partners>.card>.card-block{
     margin-top: 10px;
     font-family: "Merriweather", serif;
     font-size: 22px;
@@ -352,7 +352,7 @@ div#myCarousel {
 }
 
 #global-footer {
-    padding: 20px;
+    padding: 15px;
 }
 
 #global-footer .logo-left {
@@ -537,6 +537,40 @@ div#myCarousel {
     background-color: rgba(245, 245, 245, 0);
 }
 
+#partners img {
+    margin: 0 auto;
+}
+
+#partners h3 {
+    color: #18569C;
+    margin-top: 10px;
+}
+
+#partners a {
+    margin-top: 10px;
+}
+
+.calwest-img {
+    width: 50%;
+    background-color: #0c426f;
+}
+
+.topacademy-img {
+    width: 40%;
+}
+
+.cmawebline-img {
+    width: 50%;
+}
+
+.ssmgroup-img {
+    width: 50%;
+}
+
+#main-partners img {
+    margin: 0 auto;
+}
+
 
 @media (max-width:767px) {
 
@@ -673,8 +707,21 @@ div#myCarousel {
         text-decoration: none;
     }
 
-    body {
-        background-color: yellow;
+    .calwest-img {
+        width: 100%;
+        background-color: #0c426f;
+    }
+
+    .topacademy-img {
+        width: 70%;
+    }
+
+    .cmawebline-img {
+        width: 100%;
+    }
+
+    .ssmgroup-img {
+        width: 100%;
     }
 }
 
@@ -684,8 +731,8 @@ div#myCarousel {
         font-size: 17px;
     }
 
-    body {
-        background-color: green;
+    #partners h3 {
+        font-size: 20px;
     }
 }
 
