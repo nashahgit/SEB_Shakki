@@ -118,12 +118,12 @@
 						            	<li><a href="partners.html">PARTNERS</a></li>
 						            	<li class="dropdown active">
 						            		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICE<span class="caret"></span></a>
-									              <ul class="dropdown-menu">
-									                <li><a href="services.html">Build a Plan</a></li>
-									                <li><a href="services.html">Operate an Institution</a></li>
-									                <li><a href="services.html">Knowledge Bridging</a></li>
-									                <li><a href="services.html">Educational Consultancy</a></li>
-									                <li><a href="services.html">Seminars and Conferences</a></li>
+									              <ul id="drop" class="dropdown-menu">
+									                <li><a href="#build">Build a Plan</a></li>
+									                <li><a href="#operate">Operate an Institution</a></li>
+									                <li><a href="#bridge">Knowledge Bridging</a></li>
+									                <li><a href="#consult">Educational Consultancy</a></li>
+									                <li><a href="#seminar">Seminars and Conferences</a></li>
 									                <!--li role="separator" class="divider"></li>
 									                <li class="dropdown-header">Hello header</li>
 									                <li><a href="#">Separated link</a></li>
@@ -166,7 +166,7 @@
 							<div class="card"> 
 					    		<div class="card-block services-block">
 								    <h2 class="card-title panel-heading">Services</h2>
-									<div class="panel">
+									<div class="panel" id="build" data-offset="500">
 										<h3 class="panel-heading">Build a Plan</h3>
 									   	<div class="row panel-body">
 								    		<div class="col-sm-4">
@@ -177,7 +177,7 @@
 											</div>											
 										</div>	
 									</div>
-									<div class="panel">
+									<div class="panel" id="operate">
 										<h3 class="panel-heading">Operate an Institution</h3>
 									   	<div class="row panel-body">
 								    		<div class="col-sm-4">
@@ -188,7 +188,7 @@
 											</div>											
 										</div>	
 									</div>
-									<div class="panel">
+									<div class="panel" id="bridge">
 										<h3 class="panel-heading">Knowledge Bridging</h3>
 									   	<div class="row panel-body">
 								    		<div class="col-sm-4">
@@ -199,7 +199,7 @@
 											</div>											
 										</div>	
 									</div>		
-									<div class="panel">
+									<div class="panel" id="consult">
 										<h3 class="panel-heading">Educational Consultancy</h3>
 									   	<div class="row panel-body">
 								    		<div class="col-sm-4">
@@ -212,7 +212,7 @@
 											</div>											
 										</div>	
 									</div>
-									<div class="panel">
+									<div class="panel" id="seminar">
 										<h3 class="panel-heading">Seminars and Conferences</h3>
 									   	<div class="row panel-body">
 								    		<div class="col-sm-4">
@@ -268,5 +268,19 @@
 	  		</div>
 	  	</div>
 	  	<script type="text/javascript" src="contactus.js"></script>
+	  	<script>
+			$(document).ready(function(){
+				$('body').scrollspy({offset: 250});
+				$("#drop li a").on('click', function(event) {
+			    	event.preventDefault();
+			    	var hash = this.hash;
+				    $('html, body').animate({
+				      scrollTop: $(hash).offset().top - 50
+				    }, 500, function(){
+			   	      	window.location.hash = hash;
+			    	});
+				});
+			});   
+		</script>
   	</body>
 </html>
