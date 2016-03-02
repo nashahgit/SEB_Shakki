@@ -139,19 +139,8 @@
 						            	<li><a href="/SEB_Shakki/index.html">HOME</a></li>
 						            	<li><a href="/SEB_Shakki/about.html">ABOUT</a></li>
 						            	<li><a href="/SEB_Shakki/partners.html">PARTNERS</a></li>
-						            	<li class="dropdown active">
-						            		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICE<span class="caret"></span></a>
-									              <ul class="dropdown-menu">
-									                <li><a href="#">Build a Plan</a></li>
-									                <li><a href="#">Operate an Institution</a></li>
-									                <li><a href="#">Transfer Knowledge</a></li>
-									                <!--li role="separator" class="divider"></li>
-									                <li class="dropdown-header">Hello header</li>
-									                <li><a href="#">Separated link</a></li>
-									                <li><a href="#">More separated link</a></li-->
-									              </ul>
-						            	</li>
-							            <li><a href="/SEB_Shakki/contact.html">CONTACT</a></li>
+						            	<li><a href="/SEB_Shakki/services.html">SERVICES</a></li>
+						            	<li><a href="/SEB_Shakki/contact.html">CONTACT</a></li>
 							            
 						          	</ul>
 						        </div><!--/.nav-collapse -->
