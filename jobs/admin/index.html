@@ -1,53 +1,7 @@
-
-<?php
-	error_reporting(E_ALL);
-	ini_set('display_errors', '1');
-	
-	if ( !empty ( $_POST ) ) {
-		require_once('../includes/class-delete.php');
-		
-		if ( $delete->post($_POST) ) {
-			echo '
-			<div class="modal-dialog" style="position:absolute;z-index: 1000;text-align:center;margin-top:100px;margin-left:25%;">
-				<!-- Modal content-->
-			    <div class="modal-content">
-			        <div class="modal-body">
-			        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			          	<h3>Job deleted Successfully!</h3>
-			        </div>
-			    	<div class="modal-footer">
-			          	<a href="/SEB_Shakki/jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Delete another Job</button></a>
-			        </div>
-			    </div>
-		    </div>
-
-
-		  ';
-		}
-		else
-		{
-			echo '
-			<div class="modal-dialog" style="position:absolute;z-index: 1000;text-align:center;margin-top:100px;margin-left:25%;">
-				<!-- Modal content-->
-			    <div class="modal-content">
-			        <div class="modal-body">
-			        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-			          	<h3>Unable to delete the Job!</h3>
-			        </div>
-			    	<div class="modal-footer">
-			          	<a href="/SEB_Shakki/jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button></a>
-			        </div>
-			    </div>
-		    </div>
-
-		  ';
-		}
-	}
-?>
 <html>
 	<head>
 		<title>Admin</title>
-		<meta charset="utf-8"> 
+			   	<meta charset="utf-8"> 
 	   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	   	<link rel="icon" href="/SEB_Shakki/favicon1.gif" type="image/gif" sizes="20x16">
 	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
@@ -64,8 +18,10 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	   	<script src="/SEB_Shakki/script.js"></script>
 	</head>
+	
 	<body>
-		<div id="seg-wrap">
+		
+	  	<div id="seg-wrap">
 	  		<div id="seg-ccontent">
 	  			<div id="header" class="clearfix" role="banner">
 	  				<div id="top">
@@ -96,21 +52,23 @@
 					<div class="row">
 						<div class="col-sm-12" id="partners">
 							<div class="card"> 
-					    		<div class="card-block panel">
-					    			<h2 class="card-title panel-heading">Admin (Delete Job)</h2>
-					    			<div class="panel-body" id="form">
-					    				<p>NOTE: Copy the job ID from the jobs page and paste it below. (Job Ids starts with Uppercase 'J')</p>
-										<form method="post" role="form">
-											<div class="form-group col-sm-12">
-												<input type="text" class="form-control" name="post_jobId" placeholder="Job ID" required>
-											</div>
-											<button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>	
-										</form>
-									</div>
+					    		<div class="card-block">
+					    			<h2 class="card-title panel-heading">Admin</h2>
+					    			<div class="text-center">
+								    	<a href="/SEB_Shakki/jobs/admin/post-edit.php"><button type="button" class="btn btn-primary btn-lg"> Add Job</button></a>
+								    </div>
+								    <br>
+								    <br>
+								    <div class="text-center">
+								    	<a href="/SEB_Shakki/jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-primary btn-lg">Delete Job</button></a>
+								    </div>
 								</div>
 							</div>
 					    </div>
 					</div>
+				</div>
+				<div class="scrollup">
+					<a href="#"></a>
 				</div>
 	  		</div>
 	  	</div>

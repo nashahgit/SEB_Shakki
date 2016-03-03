@@ -177,18 +177,17 @@
 					    		<div class="card-block">
 								    <h2 class="card-title panel-heading">Smart Jobs</h2>
 								    <?php foreach ( $posts_array as $post ) : ?>
-										<div class="post">
-											<h1><a href="?p=<?php echo $post->ID; ?>"><?php echo $post->post_title; ?></a></h1>
-											<p><?php echo $post->post_jobId; ?></p>
-											<p><?php echo $post->post_content; ?></p>
+										<div class="panel">
+											<div class="panel-heading">
+												<h3><a href="?p=<?php echo $post->ID; ?>"><?php echo $post->post_title; ?></a></h3>
+											</div>
+											<div class="panel-body">
+												<p><?php echo "Job Id : " . $post->post_jobId; ?></p>
+												<p><?php echo "Job Description : " . $post->post_content; ?></p>
+											</div>
 										</div>
 									<?php endforeach; ?>
-								    <!--p class="card-text job-desc"><span>Job ID : </span> J1001 <br>
-								    <span>Job Role : </span> Software Developer <br>
-								    <span>Job Description : </span> Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. <br> </p>
-								    
-  									<a href="#" class="btn btn-primary">More Jobs</a-->
-							  	</div>
+								</div>
 							</div>
 					    </div>
 					</div>

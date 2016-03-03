@@ -32,7 +32,7 @@ TD { FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Tahoma, Arial}
 if (isset($_POST["password"]) && ($_POST["password"]=="$password")) {
 ?>
 <!-- START OF HIDDEN HTML - PLACE YOUR CONTENT HERE -->
-  <a href="http://localhost/c-man/admin/post-edit.php">Go to CMS</a>	
+  <a href="/SEB_Shakki/jobs/admin/post-edit.php">Go to CMS</a>	
   <p align="center"><br><br><br>
   <b>Congratulations</b><br>you have gained access to the Protected and Secret Area!</p>
 
