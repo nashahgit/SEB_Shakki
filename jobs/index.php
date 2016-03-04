@@ -27,7 +27,7 @@
 		<title>More Jobs</title>
 			   	<meta charset="utf-8"> 
 	   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	   	<link rel="icon" href="/SEB_Shakki/favicon1.gif" type="image/gif" sizes="20x16">
+	   	<link rel="icon" href="../favicon1.gif" type="image/gif" sizes="20x16">
 	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
 	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 	   	<link rel="stylesheet" href="../colorbox.css" type="text/css">
@@ -40,11 +40,11 @@
 
 	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-	   	<script src="/SEB_Shakki/script.js"></script>
+	   	<script src="../script.js"></script>
 	</head>
 	
 	<body>
-		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="/SEB_Shakki/loader.gif"></div>
+		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="../loader.gif"></div>
 
   		<!-- form button-->
   		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
@@ -122,7 +122,7 @@
 						    <div class="container">
 							    <div class="navbar-header">
 							    	<div class="small-owl">
-						    			<img src="/SEB_Shakki/smg_logo_orig_3.png" width="100%">
+						    			<img src="../smg_logo_orig_3.png" width="100%">
 						    		</div>
 						    	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						        	    <span class="sr-only">Toggle navigation</span>
@@ -133,14 +133,14 @@
 						        </div>
 						        <div id="navbar" class="navbar-collapse collapse">
 						        	<div class="small-owl">
-						    			<img src="/SEB_Shakki/smg_logo_orig_3.png" width="100%">
+						    			<img src="../smg_logo_orig_3.png" width="100%">
 						    		</div>
 						          	<ul class="nav navbar-nav navbar-right">
-						            	<li><a href="/SEB_Shakki/index.html">HOME</a></li>
-						            	<li><a href="/SEB_Shakki/about.html">ABOUT</a></li>
-						            	<li><a href="/SEB_Shakki/partners.html">PARTNERS</a></li>
-						            	<li><a href="/SEB_Shakki/services.html">SERVICES</a></li>
-						            	<li><a href="/SEB_Shakki/contact.html">CONTACT</a></li>
+						            	<li><a href="../index.html">HOME</a></li>
+						            	<li><a href="../about.html">ABOUT</a></li>
+						            	<li><a href="../partners.html">PARTNERS</a></li>
+						            	<li><a href="../services.html">SERVICES</a></li>
+						            	<li><a href="../contact.html">CONTACT</a></li>
 							            
 						          	</ul>
 						        </div><!--/.nav-collapse -->
@@ -152,7 +152,7 @@
 			                <div class="col-sm-6 logo-left">
 			                  	<div id="logo" class="">
 				                    <a href="/">
-				                      <img class="img-responsive" src="/SEB_Shakki/logo_latest.png" alt="Smart Eductaion Group">
+				                      <img class="img-responsive" src="../logo_latest.png" alt="Smart Eductaion Group">
 				                    </a>
 				                </div>  
 				            </div>
@@ -199,22 +199,22 @@
 								<div class="col-sm-6 logo-left">
 									<div id="footer-logo">
 										<div class="footer-owl" >
-							    			<img src="/SEB_Shakki/smg_logo_orig_3.png" width="80px" height="80px">
+							    			<img src="../smg_logo_orig_3.png" width="80px" height="80px">
 							    		</div>
 							    		<ul>
-											<li class="active"><a href="#">HOME</a></li>
-											<li class="active"><a href="#">ABOUT</a></li>
-											<li class="active"><a href="#">SERVICES</a></li>
-											<li class="active"><a href="#">CONTACT</a></li>
+											<li class="active"><a href="../index.html">HOME</a></li>
+											<li class="active"><a href="../about.html#">ABOUT</a></li>
+											<li class="active"><a href="../services.html">SERVICES</a></li>
+											<li class="active"><a href="../contact.html">CONTACT</a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="col-sm-6 logo-right">
 									<div class="social">
-										<img src="/SEB_Shakki/googleplus.png">
-							    		<img src="/SEB_Shakki/twitter.png">
-							    		<img src="/SEB_Shakki/youtube.png">
-							    		<img src="/SEB_Shakki/facebook.png">
+										<img src="../googleplus.png">
+							    		<img src="../twitter.png">
+							    		<img src="../youtube.png">
+							    		<img src="../facebook.png">
 						    		</div>
 								</div>
 							</div>

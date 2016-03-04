@@ -16,7 +16,7 @@
 			          	<h3>Job deleted Successfully!</h3>
 			        </div>
 			    	<div class="modal-footer">
-			          	<a href="/SEB_Shakki/jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Delete another Job</button></a>
+			          	<a href="../../jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Delete another Job</button></a>
 			        </div>
 			    </div>
 		    </div>
@@ -35,7 +35,7 @@
 			          	<h3>Unable to delete the Job!</h3>
 			        </div>
 			    	<div class="modal-footer">
-			          	<a href="/SEB_Shakki/jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button></a>
+			          	<a href="../../jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button></a>
 			        </div>
 			    </div>
 		    </div>
@@ -49,20 +49,20 @@
 		<title>Admin</title>
 		<meta charset="utf-8"> 
 	   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	   	<link rel="icon" href="/SEB_Shakki/favicon1.gif" type="image/gif" sizes="20x16">
+	   	<link rel="icon" href="../../favicon1.gif" type="image/gif" sizes="20x16">
 	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
 	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
-	   	<link rel="stylesheet" href="/SEB_Shakki/colorbox.css" type="text/css">
-	   	<link rel="stylesheet" type="text/css" href="/SEB_Shakki/style.css">
+	   	<link rel="stylesheet" href="../../colorbox.css" type="text/css">
+	   	<link rel="stylesheet" type="text/css" href="../../style.css">
 	   	<!--link rel="stylesheet" type="text/css" href="homepage.min.css"-->
 	   	<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/dist/css/bootstrap-responsive-tabs.css">
 	   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	   	<script src="/SEB_Shakki/responsive-tabs.js"></script>
+	   	<script src="../../responsive-tabs.js"></script>
 
 	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-	   	<script src="/SEB_Shakki/script.js"></script>
+	   	<script src="../../script.js"></script>
 	</head>
 	<body>
 		<div id="seg-wrap">
@@ -73,7 +73,7 @@
 						    <div class="container">
 							    <div class="navbar-header">
 							    	<div class="small-owl">
-						    			<img src="smg_logo_orig_3.png" width="100%">
+						    			<img src="../../smg_logo_orig_3.png" width="100%">
 						    		</div>
 						    	</div>
 						    </div>
@@ -84,7 +84,7 @@
 			                <div class="col-sm-6 logo-left">
 			                  	<div id="logo" class="">
 				                    <a href="/">
-				                      <img class="img-responsive" src="/SEB_Shakki/logo_latest.png" alt="Smart Eductaion Group">
+				                      <img class="img-responsive" src="../../logo_latest.png" alt="Smart Eductaion Group">
 				                    </a>
 				                </div>  
 				            </div>
