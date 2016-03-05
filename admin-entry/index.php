@@ -30,9 +30,11 @@ TD { FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Tahoma, Arial}
   print "<h2 align=\"center\">PHP Simple Password Protect</h2>";
 // If password is valid let the user get access
 if (isset($_POST["password"]) && ($_POST["password"]=="$password")) {
+	header("Location: ../jobs/admin/");
+	die();
 ?>
 <!-- START OF HIDDEN HTML - PLACE YOUR CONTENT HERE -->
-  <a href="/SEB_Shakki/jobs/admin/post-edit.php">Go to CMS</a>	
+  <!--a href="/SEB_Shakki/jobs/admin/post-edit.php">Go to CMS</a-->	
   <p align="center"><br><br><br>
   <b>Congratulations</b><br>you have gained access to the Protected and Secret Area!</p>
 
@@ -47,7 +49,7 @@ if (isset($_POST['password']) || $password == "") {
   print "<form method=\"post\"><p align=\"center\">Please enter your password for access<br>";
   print "<input name=\"password\" type=\"password\" size=\"25\" maxlength=\"10\"><input value=\"Login\" type=\"submit\"></p></form>";
 }
-  print "<br><br><p align=\"center\">Written by <a href=\"http://www.stevedawson.com\">SteveDawson.com</a></p>";
+
 ?>
 <BR>
 </body>
