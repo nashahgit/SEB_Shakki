@@ -16,7 +16,8 @@
 			          	<h3>Job added Successfully!</h3>
 			        </div>
 			    	<div class="modal-footer">
-			          	<a href="../../jobs/admin/post-edit.php"><button type="button" class="btn btn-default" data-dismiss="modal">Add another Job</button></a>
+			          	<a href="../../jobs/admin/post-edit.php"><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Add another Job</button></a>
+			          	<a href="../../jobs/admin/post-edit-delete.php"><button type="button" class="btn btn-default pull-left" data-dismiss="modal">Delete Job</button></a>
 			        </div>
 			    </div>
 		    </div>

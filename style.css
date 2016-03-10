@@ -770,10 +770,6 @@ div#myCarousel {
     .my-img {
         display: none;
     }
-
-    body {
-        background-color: red;
-    }
 }
 
 @media (max-width: 360px) {

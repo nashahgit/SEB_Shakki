@@ -114,7 +114,7 @@
 		    </div>
 		</div>
 
-	  	<div id="seg-wrap">
+	  	<!--div id="seg-wrap"-->
 	  		<div id="seg-ccontent">
 	  			<div id="header" class="clearfix" role="banner">
 	  				<div id="top">
@@ -176,22 +176,31 @@
 							<div class="card"> 
 					    		<div class="card-block">
 								    <h2 class="card-title panel-heading">Smart Jobs</h2>
-								    <?php foreach ( $posts_array as $post ) : ?>
+								    <?php if($posts_array > 0 ) :
+								    	foreach ( $posts_array as $post ) : ?>
 										<div class="panel">
 											<div class="panel-heading">
-												<h3><a href="?p=<?php echo $post->ID; ?>"><?php echo $post->post_title; ?></a></h3>
+												<h3><?php echo $post->post_title; ?></h3>
 											</div>
 											<div class="panel-body">
 												<p><?php echo "Job Id : " . $post->post_jobId; ?></p>
 												<p><?php echo "Job Description : " . $post->post_content; ?></p>
 											</div>
 										</div>
-									<?php endforeach; ?>
+									<?php endforeach; 
+										else : ?>
+										<div class="panel">
+											<div class="panel-heading">
+												<h3>Sorry : There are No Jobs listed right now.</h3>
+											</div>
+										</div>
+									<?php endif; ?>	
 								</div>
 							</div>
 					    </div>
 					</div>
 				</div>
+				<br><br><br><br><br><br><br>
 				<div id="footer" class="clearfix footer" role="contentinfo">
 					<div id="global-footer">
 						<div class="container">
@@ -230,7 +239,7 @@
 					<a href="#"></a>
 				</div>
 	  		</div>
-	  	</div>
+	  	<!--/div-->
 	  	<script type="text/javascript" src="../contactus.js"></script>
 		
 	</body>
