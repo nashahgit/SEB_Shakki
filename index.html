@@ -324,10 +324,56 @@
 							<div class="card"> 
 					    		<div class="card-block">
 								    <h3 class="card-title">Smart Jobs</h3>
-								    <p class="card-text job-desc"> <span>SORRY : CURRENTLY THERE ARE NO JOBS LISTED</span>
-								    <!--span>Job ID : </span> J1001 <br>
+								    
+								    <?php
+										error_reporting(E_ALL);
+										ini_set('display_errors', '1');
+
+										require_once('jobs/includes/class-query.php');
+										
+										if ( !empty ( $_GET ) ) {
+											if ( !empty ( $_GET['p'] ) ) {
+												$post = $_GET['p'];
+											}
+											
+											if ( !empty ( $_GET['cat'] ) ) {
+												$cat = $_GET['cat'];
+											}
+										}
+										
+										if ( empty ( $post ) && empty ( $cat ) ) {
+											$posts_array = $query->all_posts();
+										} elseif ( !empty ( $post ) ) {
+											$posts_array = $query->post($post);
+										} elseif ( !empty ( $cat ) ) {
+											echo 'cat';
+										}
+									?> 
+								    <?php if($posts_array > 0 ) :
+								    	foreach ( $posts_array as $post ) : ?>
+										<div class="panel">
+											<div class="panel-heading">
+												<h4><?php echo $post->post_title; ?></h4>
+											</div>
+											<div class="panel-body">
+												<p><?php echo "Job Id : " . $post->post_jobId; ?></p>
+												<p><?php echo "Job Description : " . $post->post_content; ?></p>
+											</div>
+										</div>
+										<?php break; ?>
+									<?php endforeach; 
+										else : ?>
+										<div class="panel">
+											<div class="panel-heading">
+												<h4>Sorry : There are No Jobs listed right now.</h4>
+											</div>
+										</div>
+									<?php endif; ?>
+									<!--p class="card-text job-desc">			
+								    <span>SORRY : CURRENTLY THERE ARE NO JOBS LISTED</span>
+								    <span>Job ID : </span> J1001 <br>
 								    <span>Job Role : </span> Software Developer <br>
-								    <span>Job Description : </span> Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. <br--> </p>
+								    <span>Job Description : </span> Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. Twinkle Twinkle little star how I wonder what you are. Up above the world so high. Like a diamond in the sky. <br> </p-->
 								    
   									<a href="jobs/" class="btn btn-primary">More Jobs</a>
 							  	</div>
