@@ -26,11 +26,14 @@
 			
 			public function select($query) {							
 				$result = $this->connection->query($query);
-				
-				while ( $obj = $result->fetch_object() ) {
-					$results[] = $obj;
+				if ($result->num_rows > 0) {
+					while ( $obj = $result->fetch_object() ) {
+						$results[] = $obj;
+					}
+				} else {
+					$results = 0;
 				}
-				
+
 				return $results;
 			}
 		}
