@@ -23,9 +23,12 @@
 	}
 ?>
 <html>
-	<head>
-		<title>More Jobs</title>
-			   	<meta charset="utf-8"> 
+	<head>		
+		<meta charset="utf-8"> 
+		<title>More Jobs | Smart Education Group</title>
+		<meta name="description" content="Jobs or Careers Page of Smart Education Group Dubai U.A.E, an Education Organization Consultancy">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Nasruddin Shah"> 
 	   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	   	<link rel="icon" href="../favicon1.gif" type="image/gif" sizes="20x16">
 	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
