@@ -2,7 +2,7 @@
 	if ( !class_exists ('DB') ) {
 		class DB {
 			public function __construct() {
-				$mysqli = new mysqli('localhost', 'root', '', 'seg_db');
+				$mysqli = new mysqli('localhost', 'seg', 'e6ujy4ygu', 'seg_db');
 				
 				if ($mysqli->connect_errno) {
 					printf("Connect failed %s\n", $mysqli->connect_error);
