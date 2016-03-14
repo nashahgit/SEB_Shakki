@@ -2,8 +2,9 @@
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
-	
-	if ( !empty ( $_POST ) ) {
+	$password = "ben10admin";
+	if (isset($_POST["job-info"]) ) {
+
 		require_once('../includes/class-insert.php');
 		
 		if ( $insert->post($_POST) ) {
@@ -97,21 +98,36 @@
 							<div class="card"> 
 					    		<div class="card-block panel">
 					    			<h2 class="card-title panel-heading">Admin (Add Job)</h2>
-					    			<div class="panel-body" id="form">
-					    				<p>NOTE: Please check the last job ID in the jobs page before adding. (Job Ids starts with Uppercase 'J')</p>
-										<form method="post" role="form">
-											<div class="form-group col-sm-12">
-												<input type="text" class="form-control" name="post_jobId" placeholder="Job ID" required>
+					    			<?php
+
+										if (isset($_POST["password"]) && ($_POST["password"]=="$password")) {
+
+											echo "<div class=\"panel-body\" id=\"form\">
+							    			<p>NOTE: Please check the last job ID in the jobs page before adding. (Job Ids starts with Uppercase 'J')</p>
+											<form method=\"post\" role=\"form\">
+											<div class=\"form-group col-sm-12\">
+											<input type=\"text\" class=\"form-control\" name=\"post_jobId\" placeholder=\"Job ID\" required>
 											</div>
-											<div class="form-group col-sm-12">
-												<input type="text" class="form-control" name="post_title" placeholder="Job Title" required>
+											<div class=\"form-group col-sm-12\">
+											<input type=\"text\" class=\"form-control\" name=\"post_title\" placeholder=\"Job Title\" required>
 											</div>
-											<div class="form-group col-sm-12">
-												<textarea name="post_content" rows="5" class="form-control" placeholder="Job Description" required></textarea>
+											<div class=\"form-group col-sm-12\">
+											<textarea name=\"post_content\" rows=\"5\" class=\"form-control\" placeholder=\"Job Description\" required></textarea>
 											</div>
-											<button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>	
-										</form>
-									</div>
+											<button type=\"submit\" name=\"job-info\" id=\"form-submit\" class=\"btn btn-success pull-right \">Submit</button>
+											</form>
+											</div>";
+										}
+										else
+										{
+											if (isset($_POST['password']) || $password == "") {
+												print "<p align=\"center\"><font color=\"red\"><b>Incorrect Password</b><br>Please enter the correct password</font></p>";
+											}
+											print "<form method=\"post\"><p align=\"center\">Please enter your password for access<br>";
+											print "<input name=\"password\" type=\"password\" size=\"25\" maxlength=\"10\"><input value=\"Login\" type=\"submit\"></p></form>";
+										}
+									?> 
+
 								</div>
 							</div>
 					    </div>

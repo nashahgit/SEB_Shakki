@@ -12,7 +12,7 @@
  
     $.ajax({
         type: "POST",
-        url: "/SEB_Shakki/sendmail.php",
+        url: "/sendmail.php",
         data: "name=" + name +"&company=" + company + "&designation=" + designation + "&mobile=" + mobile + "&email=" + email + "&country=" + country + 
               "&subject=" + subject + "&message=" + message, 
         success : function(text){
