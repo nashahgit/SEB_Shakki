@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	   	<meta charset="utf-8"> 
+		<meta charset="utf-8"> 
+		<meta name="google-site-verification" content="7LKv2fJSPqyIKrfHySW_s845SV8-yzmticHcHgPhWI0" />
 	   	<title> HOME | Smart Education Group</title>
 	   	<meta name="description" content="Home Page of Smart Education Group Dubai U.A.E. Education Organization Consultancy">
 		<meta name="keywords" content="HTML,CSS,JavaScript">
