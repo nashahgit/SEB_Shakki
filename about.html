@@ -29,7 +29,7 @@
 
   		<!-- form button-->
   		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
-	    	ContactUS
+	    	Contact Us
 		</button>
 
 		<!-- Modal start -->
@@ -164,7 +164,7 @@
 											<h1>Nurture.</h1>
 										</div>
 									</div>
-								    <h2 class="card-title panel-heading">About US</h2>
+								    <h2 class="card-title panel-heading">About Us</h2>
 								    <div class="row">
 								    	<div class="col-sm-12">
 										    <div class="panel">
@@ -333,5 +333,19 @@
 	  		</div>
 	  	</div>
 	  	<script type="text/javascript" src="contactus.js"></script>
+	  	<script>
+			$(document).ready(function(){
+				$('body').scrollspy({offset: 250});
+				$("#board li a").on('click', function(event) {
+			    	event.preventDefault();
+			    	var hash = this.hash;
+				    $('html, body').animate({
+				      scrollTop: $(hash).offset().top - 150
+				    }, 500, function(){
+			   	      	window.location.hash = hash;
+			    	});
+				});
+			});   
+		</script>
 	</body>
 </html>

@@ -502,7 +502,7 @@ div#myCarousel {
 }
 
 #team .img-responsive{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -551,20 +551,20 @@ div#myCarousel {
 }
 
 .calwest-img {
-    width: 50%;
+    width: 40%;
     background-color: #0c426f;
 }
 
 .topacademy-img {
-    width: 40%;
+    width: 20%;
 }
 
 .cmawebline-img {
-    width: 50%;
+    width: 30%;
 }
 
 .ssmgroup-img {
-    width: 50%;
+    width: 25%;
 }
 
 #main-partners img {
@@ -708,20 +708,20 @@ div#myCarousel {
     }
 
     .calwest-img {
-        width: 100%;
+        width: 80%;
         background-color: #0c426f;
     }
 
     .topacademy-img {
-        width: 70%;
+        width: 60%;
     }
 
     .cmawebline-img {
-        width: 100%;
+        width: 80%;
     }
 
     .ssmgroup-img {
-        width: 100%;
+        width: 80%;
     }
 }
 

@@ -30,7 +30,7 @@
 
   		<!-- form button-->
   		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
-	    	ContactUS
+	    	Contact Us
 		</button>
 
 		<!-- Modal start -->
