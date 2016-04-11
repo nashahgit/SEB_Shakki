@@ -501,6 +501,10 @@ div#myCarousel {
     text-align: center;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #team .img-responsive{
     width: 40%;
     margin: 0 auto;
