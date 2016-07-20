@@ -106,6 +106,37 @@
 		    </div>
 		</div>
 
+		<button class="btn btn-primary"  id="cma-program-button" data-toggle="modal" data-target="#cma-program-modal">
+	    	CMA <br> Program <br> Intake 
+		</button>
+
+		<div class="modal fade" id="cma-program-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <!--div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal">
+		                    <span aria-hidden="true">&times;</span>
+		                    <span class="sr-only">Close</span>
+		                </button>
+		            </div-->
+		            
+		            <!-- Modal Body -->
+		            <div class="modal-body">
+		                <div class="row">
+							<div class="col-sm-12">
+								<div id="cma-program-poster">
+									<img class="img-responsive" src="CMA_8332.jpg" width="70%">
+									<br>
+									<a target="_blank" href="CMA-Nov-2016-SEG.pdf"><div type="submit" id="download-pdf" class="btn btn-success img-responsive">Download PDF</div></a>
+								</div>
+							</div>
+						</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 	  	<div id="seg-wrap">
 	  		<div id="seg-ccontent">
 	  			<div id="header" class="clearfix" role="banner">

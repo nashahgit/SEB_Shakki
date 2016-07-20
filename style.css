@@ -37,6 +37,47 @@ body{
     box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
 }
 
+#cma-program-button {
+    position: fixed;
+    top: 200px;
+    right: -2px;
+    width: auto;
+    height: auto;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #dc0f0f;
+    animation:myfirst 1s;
+    -moz-animation:myfirst 1s infinite; /* Firefox */
+    -webkit-animation:myfirst 1s infinite; /* Safari and Chrome */
+    z-index: 999;
+    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background-color:#dc0f0f;}
+50%  {background-color:#2c7f2f;}
+100% {background-color:#dc0f0f;}
+}
+ 
+@-webkit-keyframes myfirst /* Firefox */
+{
+0%   {background-color:#dc0f0f;}
+50%  {background-color:#2c7f2f;}
+100% {background-color:#dc0f0f;}
+}
+
+
+
+
+#cma-program-poster .img-responsive {
+    margin: 0 auto;
+}
+
+#download-pdf {
+    margin: 0 auto;
+}
 
 .margin-top-20 {
     margin-top: 20px;
