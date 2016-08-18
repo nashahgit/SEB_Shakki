@@ -254,7 +254,7 @@
 						<div class="col-sm-4 three-cards top">
 				    		<div class="card">
 				    		  	<div class="card-block top">
-								    <h3 class="card-title">Operate an Institution</h3>
+								    <h3 class="card-title">Courses</h3>
 							  	</div>
 							  	<img class="img-responsive" src="operate_2.png" width="100%" alt="Card image">
 								<div class="card-block">
@@ -307,15 +307,16 @@
 					    <div class="col-sm-5" id="seminars">
 					    	<div class="card seminar"> 
 						    	<div class="card-block">
-								    <h3 class="card-title">Seminars</h3>
+								    <h3 class="card-title">Courses</h3>
 								</div>
-							 	<br>
 							  	<div class="card-block">
 								   <li class="card-text">Certified Management Accounting (CMA) 7 Days Program.</li>
 								   <li class="card-text">Certified Global Business Analyst (CGBA) Program.</li>
 								   <li class="card-text">International Financial Reporting Standards (IFRS).</li>
 								   <li class="card-text">Islamic Banking and Finance.</li>
+								   <li class="card-text">VAT.</li>
 								   <li class="card-text">Risk Management Program.</li>
+								   <li class="card-text">Finance for Non-Finance.</li>
 								</div>
 						    </div>
 						    <div class="card conference"> 
@@ -429,6 +430,18 @@
 				<div id="footer" class="clearfix footer" role="contentinfo">
 					<div id="global-footer">
 						<div class="container">
+							<div class="row tagline">
+								<div class="col-sm-4">
+									<h1>Learn.</h1>
+								</div>
+								<div class="col-sm-4">
+									<h1>Innovate.</h1>
+								</div>
+								<div class="col-sm-4">
+									<h1>Nurture.</h1>
+								</div>
+							</div>
+							<br>
 							<div class="row">
 								<div class="col-sm-6 logo-left">
 									<div id="footer-logo">

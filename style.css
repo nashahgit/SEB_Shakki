@@ -315,7 +315,7 @@ div#myCarousel {
 
 #seminars>.seminar {
     margin-top: 15px;
-    padding: 15px;
+    padding: 5px;
     background-color: #840381;
     /*box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);*/
 }
@@ -330,7 +330,7 @@ div#myCarousel {
 #seminars>.card>.card-block>h3 {
     font-family: "Merriweather", serif;
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: white;
 }
 
@@ -526,18 +526,18 @@ div#myCarousel {
 
 .tagline {
     margin-top: -15px;
-    background: rgba(73,155,234,1);
-    background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: rgb(4, 64, 132);
+    /*background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
     background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
     background: linear-gradient(to right, rgb(18, 41, 64) 0%, rgb(8, 100, 206) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );*/
 }
 
 .tagline h1 {
-    font-family: MoonLight;
+    font-family: Merriweather;
     color: white;
     text-align: center;
 }

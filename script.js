@@ -1,11 +1,11 @@
 ﻿	  	$(document).ready(function () {
-
-	  		document.getElementById("hideAll").style.display = "block";
+	  		
 
 		  	window.onload = function() { 
 		  		document.getElementById("hideAll").style.display = "none"; 
 		  	}
 
+		  	document.getElementById("hideAll").style.display = "block";
 
 	  		$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
 		    	e.preventDefault();
