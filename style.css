@@ -197,21 +197,23 @@ div#myCarousel {
 .carousel-caption {
     text-align: left;
     font-family: "Merriweather", serif;
-    font-style: italic;
-    font-size: 40px;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    /*font-style: italic;*/
+    font-size: 30px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
 }
+
+
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { left : -100px; opacity: 0;}
+    to   { left: 20%; opacity: 1; }
 }
 
-.carousel-caption h1 {
-    font-size: 60px;
-    color: #105FB9;
-    text-shadow:  0px 1px 6px #FFFFFF;
+.carousel-caption span {
+    background-color: #0e5ab1;
+    padding: 5px 10px;
 }
+
 
 .fa {
     display: block;
@@ -650,10 +652,7 @@ div#myCarousel {
     }
 
     .carousel-caption {
-        font-size: 30px;
-    }
-    .carousel-caption h1 {
-        font-size: 40px;
+        font-size: 10px;
     }
 
     /*.carousel-inner .item {
@@ -661,8 +660,6 @@ div#myCarousel {
     }*/
 
     .carousel-caption {
-        right: 40%;
-        left: 35%;
         padding-bottom: 30px;
     }
 
@@ -768,6 +765,13 @@ div#myCarousel {
     .ssmgroup-img {
         width: 80%;
     }
+
+    .tagline h1 {
+        font-family: Merriweather;
+        font-size: 26px;
+        color: white;
+        text-align: center;
+    }
 }
 
 @media (max-width:991px) {
@@ -795,21 +799,10 @@ div#myCarousel {
     	margin: 0 auto;
 	}
 
-    .carousel-caption {
-        font-size: 28px;
-    }
-    .carousel-caption h1 {
-        font-size: 35px;
-    }
-
-    /*.carousel-inner .item {
-        margin: 0 -4em 0 -3em;
-    }*/
-
-    .carousel-caption {
-        right: 42%;
-        left: 45%;
-        padding-bottom: 70px;
+     .carousel-caption {
+        font-size: 10px;
+        padding-bottom: 0px;
+        bottom: 0px;
     }
 
     .my-img {
@@ -830,6 +823,7 @@ div#myCarousel {
         right: 40%;
         left: 20%;
         padding-bottom: 30px;
+        font-size: 20px;
     }
 }
 
@@ -865,11 +859,15 @@ div#myCarousel {
         display: -ms-flexbox;
         display: flex;
     }
+    .carousel-caption {
+        font-size: 30px;
+    }
 }
 
 @media (min-width:992px)and (max-width:1199px) {
-    
-  
+    .carousel-caption {
+        font-size: 20px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -879,5 +877,4 @@ div#myCarousel {
         display: -ms-flexbox;
         display: flex;
     }
-   
 }

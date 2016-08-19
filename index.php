@@ -200,31 +200,40 @@
 			      </ol-->
 			      <div class="carousel-inner" role="listbox">
 			        <div class="item active">
-			          <img class="first-slide img-responsive" src="banner-growth.png" alt="First slide">
+			          <img class="first-slide img-responsive" src="Home-Banner-1.jpg" alt="First slide">
 			          
-			            <!--div class="carousel-caption">
-			              <h1>Let's</h1>
-			              <p> create your growth story together!</p>
-			            </div-->
+			            <div class="carousel-caption">
+			              <p><span>Welcome </span></p> 
+			              <p><span> to<span style="background-color:#DC0F0F;">ICMA</span>Australia Regional Centre </span></p>
+			              <p><span> in UAE and GCC </span></p>
+			            </div>
 			   
 			        </div>
 			        <div class="item">
-			          <img class="second-slide img-responsive" src="banner-raise-4.png" alt="Second slide">
+			          <img class="second-slide img-responsive" src="Home-Banner-2.jpg" alt="Second slide">
 	
-			            <!--div class="carousel-caption">
-			              <h1>Raise </h1>
-			              <p>efficiency and keep projects on time! </p>
-			            </div-->
+			            <div class="carousel-caption">
+			              <p><span>Experienced </span></p> 
+			              <p><span> in Accounting and Finance?</span></p>
+			              <p><span> You can be a<span style="background-color:#DC0F0F;">CMA</span>qualified</span></p>
+			            </div>
 		
 			        </div>
 			        <div class="item">
-			          <img class="third-slide img-responsive" src="banner-we-2.png" alt="Third slide">
-			  
-			            <!--div class="carousel-caption">
-			              <h1>We</h1>
-			              <p>provide unique and tailored solutions!</p>
-			            </div-->
-			 
+			          <img class="third-slide img-responsive" src="Home-Banner-3.jpg" alt="Third slide">
+			            <div class="carousel-caption">
+			              <p><span>Got Confused </span></p> 
+			              <p><span>with Accounting standards?</span></p>
+			              <p><span>Let's learn<span style="background-color:#DC0F0F;">IFRS</span>with certification</span></p>
+			            </div>
+			        </div>
+			        <div class="item">
+			          <img class="third-slide img-responsive" src="Home-Banner-4.jpg" alt="Third slide">
+			            <div class="carousel-caption">
+			              <p><span>Aspiring to be a Business Analyst?</span></p> 
+			              <p><span style="background-color:#DC0F0F;">CGBA</span></p>
+			              <p><span>A recognition to your Degree</span></p>
+			            </div>
 			        </div>
 			      </div>
 			      <div class="camera_nav"></div>
