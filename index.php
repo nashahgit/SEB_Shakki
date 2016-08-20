@@ -162,6 +162,8 @@
 						            	<li class="active"><a href="#">HOME</a></li>
 						            	<li><a href="about.html">ABOUT</a></li>
 						            	<li><a href="partners.html">PARTNERS</a></li>
+						            	<li><a href="courses.html">COURSES</a></li>
+						            	<li><a href="providers.html">PROVIDERS</a></li>
 						            	<li><a href="services.html">SERVICES</a></li> 
 						                <li><a href="contact.html">CONTACT</a></li>
 							        </ul>
