@@ -198,7 +198,7 @@ div#myCarousel {
     text-align: left;
     font-family: "Merriweather", serif;
     /*font-style: italic;*/
-    font-size: 30px;
+    font-size: 28px;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
 }
 
@@ -352,7 +352,7 @@ div#myCarousel {
     color: #f5f5f5;
 }
 
-#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card, #services>.card, #main-partners>.card{
+#jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card, #services>.card, #main-partners>.card, #courses>.card{
     padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
     box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
@@ -619,6 +619,40 @@ div#myCarousel {
 }
 
 
+
+/*.bs-docs-sidebar {
+    z-index: 9;
+}
+
+.bs-docs-sidenav {
+    width: 255px; 
+    margin: 30px 0 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #0088cc;
+}*/
+
+.bs-docs-sidebar .nav>li>a {
+    padding: 8px 20px;
+    border-bottom: 1px solid #f0ecf7;
+}
+
+.page-header>h1, .page-header>h2 {
+    color: #18569C;
+}
+
+
 @media (max-width:767px) {
 
 	#logo img {
@@ -660,7 +694,8 @@ div#myCarousel {
     }*/
 
     .carousel-caption {
-        padding-bottom: 30px;
+        padding-bottom: 0px;
+        bottom: 0px;
     }
 
     .small-owl {
@@ -819,6 +854,11 @@ div#myCarousel {
 
 @media (min-width:768px) {
 
+    .bs-docs-sidebar {
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+
     .carousel-caption {
         right: 40%;
         left: 20%;
@@ -853,6 +893,16 @@ div#myCarousel {
 
 @media (min-width:992px) {
 
+    .bs-docs-sidebar.affix .bs-docs-sidenav, .bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bs-docs-sidebar.affix {
+        position: fixed;
+        top: 50px;
+    }
+
     .row {
         display: -webkit-box;
         display: -webkit-flex;
@@ -860,7 +910,7 @@ div#myCarousel {
         display: flex;
     }
     .carousel-caption {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 

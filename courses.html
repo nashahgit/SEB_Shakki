@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   	<meta charset="utf-8">
+	   	<title> Courses | Smart Education Group</title>
+	   	<meta name="description" content="Partners Page of Smart Education Group Dubai U.A.E, an Education Organization Consultancy">
+			<meta name="keywords" content="HTML,CSS,JavaScript">
+			<meta name="author" content="Nasruddin Shah"> 
+	   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   	<link rel="icon" href="favicon1.gif" type="image/gif" sizes="20x16">
+	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
+	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+
+	   	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	   	<link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+
+	   	<link rel="stylesheet" href="colorbox.css" type="text/css">
+	   	<link rel="stylesheet" type="text/css" href="style.css">
+	   	<!--link rel="stylesheet" type="text/css" href="homepage.min.css"-->
+	   	<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/dist/css/bootstrap-responsive-tabs.css">
+	   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	   	<script src="responsive-tabs.js"></script>
+	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	   	<script src="script.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-76871462-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	        
+	</head>
+  	<body>
+  		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="loader.gif"></div>
+
+  		<!-- form button-->
+  		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
+	    	Contact Us
+		</button>
+
+		<!-- Modal start -->
+		<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal">
+		                    <span aria-hidden="true">&times;</span>
+		                    <span class="sr-only">Close</span>
+		                </button>
+		                <h3 class="modal-title" id="myModalLabel">
+		                    Contact Us
+		                </h3>
+		            </div>
+		            
+		            <!-- Modal Body -->
+		            <div class="modal-body">
+		                <div class="row">
+							<div class="col-sm-12">
+							    <form role="form" id="contactForm">
+							     	<div class="form-group col-sm-12">
+							            <!--label for="name" class="h4">Name</label-->
+							            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="company" class="h4">Company</label-->
+							            <input type="text" class="form-control" id="company" placeholder="Company name" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="email" class="h4">Email</label-->
+							            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="country" placeholder="Country" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="message" class="h4 ">Message</label-->
+							            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+							        </div>
+							        <button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>
+							    </form>
+							    <div id="msgprocess" class="h3 text-center hidden">Processing...</div>
+							    <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+							</div>
+						</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+	  	<div id="seg-wrap">
+	  		<div id="seg-ccontent">
+	  			<div id="header" class="clearfix" role="banner">
+	  				<div id="top">
+	              		<nav class="navbar navbar-default navbar-fixed-top">
+						    <div class="container">
+							    <div class="navbar-header">
+							    	<div class="small-owl">
+						    			<img src="smg_logo_orig_3.png" width="100%">
+						    		</div>
+						    	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						        	    <span class="sr-only">Toggle navigation</span>
+						            	<span class="icon-bar"></span>
+						            	<span class="icon-bar"></span>
+						            	<span class="icon-bar"></span>
+						          	</button>
+						        </div>
+						        <div id="navbar" class="navbar-collapse collapse">
+						        	<div class="small-owl">
+						    			<img src="smg_logo_orig_3.png" width="100%">
+						    		</div>
+						          	<ul class="nav navbar-nav navbar-right">
+						            	<li><a href="index.php">HOME</a></li>
+						            	<li><a href="about.html">ABOUT</a></li>
+						            	<li class="active"><a href="partners.html">PARTNERS</a></li>
+						            	<li><a href="services.html">SERVICES</a></li> 
+							            <li><a href="contact.html">CONTACT</a></li>
+							            
+						          	</ul>
+						        </div><!--/.nav-collapse -->
+						    </div>
+						</nav>
+	            	</div>
+	            	<div class="container">
+              			<div class="row ">
+			                <div class="col-sm-6 logo-left">
+			                  	<div id="logo" class="">
+				                    <a href="/">
+				                      <img class="img-responsive" src="logo_latest.png" alt="Smart Eductaion Group">
+				                    </a>
+				                </div>  
+				            </div>
+				            <div class="col-sm-6 logo-right">     
+				                <div id="contact">
+				                	<div class="fa fa-phone">
+					            		<div class="phone-num">+971 52 67 47 153</div>
+						            	<div class="phone-num">+971 55 10 62 083</div>
+						            </div>
+					            </div>
+			                </div>
+			            </div>
+            		</div>
+            	</div>
+            	<!-- Carousel
+    			================================================== -->
+
+				<div class="container margin-bottom-20">
+					<div class="row">
+						<div class="col-sm-12" id="courses">
+							<div class="card"> 
+								<h2 class="card-title panel-heading">Courses</h2>
+					    		<div class="row">
+							      <div class="col-sm-3" role="complementary">
+							      	<nav class="panel bs-docs-sidebar affix">
+								         <ul class="nav bs-docs-sidenav">
+								            <li class="active"><a href="#cma"><i class="icon-chevron-right"></i>CMA</a></li>
+								            <li><a href="#ifrs"><i class="icon-chevron-right"></i>IFRS</a></li>
+								            <li><a href="#cgba"><i class="icon-chevron-right"></i>CGBA</a></li>
+								            <li><a href="#islamic"><i class="icon-chevron-right"></i>Islamic Banking and Finance</a></li>
+								            <li><a href="#vat"><i class="icon-chevron-right"></i>VAT</a></li>
+								            <li><a href="#risk"><i class="icon-chevron-right"></i>Risk Management</a></li>
+								            <li><a href="#finance"><i class="icon-chevron-right"></i>Finance for Non-Finance</a></li>
+								         </ul>
+								      </nav>
+							      </div>
+      							<div class="col-sm-9">
+      								<div class="panel">
+							         <div class="panel-body bs-docs-section" id="cma">
+							          <div class="page-header">
+							          	<img src="CMA.jpg" width="100%">
+							            <h1>CMA</h1>
+							            <p>
+							            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							            </p>
+							            <p>
+							            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							            </p>
+							          </div>
+										</div>
+										</div>
+
+										<div class="panel">
+							         <div class="panel-body bs-docs-section" id="ifrs">
+							            <div class="page-header">
+							            	<img src="IFRS.jpg" width="100%">
+							            	<h1>IFRS</h1>
+							            	<p>
+							            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							            </p>
+							            <p>
+							            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							            </p>
+							            </div>
+										</div>
+										</div>
+
+										<div class="panel">
+								         <div  class="panel-body bs-docs-section" id="cgba">
+								            <div class="page-header">
+								            	<img src="CGBA.jpg" width="100%">
+								            	<h1>CGBA</h1>
+								            	<p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            <p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            </div>
+								         </div>
+							         </div>
+
+							         <div class="panel">
+								         <div  class="panel-body bs-docs-section" id="islamic">
+								            <div class="page-header">
+								            	<img src="CGBA.jpg" width="100%">
+								            	<h1>Islamic Banking and Finance</h1>
+								            	<p>
+								            	Islamic banking (Arabic:<span style="font-weight:800;font-size:16px">مصرفية إسلامية</span>‎‎) is banking or banking activity that is consistent with the principles of sharia (Islamic law) and its practical application through the development of Islamic economics. As such, a more correct term for Islamic banking is “sharia compliant finance”. The vital objective of the training in Islamic banking, Finance and in Islamic insurance is building the knowledge and enhancing the competency of personnel serving in this sector with a candid insight of the need to take morality and professionalism into account very earnestly in all their business activities.
+								            </p>
+								            <p>
+								            	The course is designed for students and professionals who are seeking to have more than a basic understanding of the concepts and operating principles that apply to different types of Islamic banking in comparison to conventional banking. Applying Islamic principles in banking in modern markets poses serious challenges for Islamic banks. The importance is on practical implementation of Islamic finance principles in the real world of finance.
+								            </p>
+								            <h2>Training Overview and Objectives</h2>
+								            <p>
+								            	The principal aim of the training is to prepare those following a career with the knowledge and skills to be able to handle assertively and efficiently in a new work environment. Through an understanding of concepts and practical experiences individuals are given the opportunity to apply the knowledge learnt to financial situations they are likely to meet at work dealing with clients seeking Shari'ah-compliant products and services.
+								            </p>
+								            <p>
+								            	The essential objective of the training program is to strengthen the knowledge of employees working in the Islamic financial services industry and the Shari'ah-compliant applications. There is also a focus on the professional aspects of the employees' role, and on research and communication skills, alongside their aspirations and achievements.
+								            </p>
+								            </div>
+								         </div>
+							         </div>
+
+							         <div class="panel">
+								         <div  class="panel-body bs-docs-section" id="vat">
+								            <div class="page-header">
+								            	<img src="VAT.jpg" width="100%">
+								            	<h1>VAT - Value Added Tax</h1>
+								            	<h2>Background</h2>
+								            	<p>
+								            	The GCC Member States are in the progression of approving the common framework for the introduction of a Value Added Tax (VAT) in the GCC. VAT will help governments to deliver on long-standing plans for economic diversification away from oil, while still being able to deliver social and economic programs. ICMA has recognized the need for providing valuable and knowledgeable training on VAT and how it works and how it brings fruitful enhancement to the organisation and economic development either.
+								            </p>
+								            <p>
+								            	The course observes the various laws, rules and guidelines of VAT. It openly establishes the necessary controlling systems that has to be required to make smooth operations of VAT in an organisation. The course on VAT explores complete understanding of VAT, it consists of all the vital tax topics and after the training the students should have thorough knowledge on VAT and its procedures, including proper calculations and VAT.
+								            </p>
+								            <h2>VAT Course Objectives</h2>
+								            <p>
+								            	The course will cover the following broad areas:
+								            </p>
+								            <ul>
+								            	<li>VAT and UAE</li>
+								            	<li>VAT and Economic Development</li>
+								            	<li>VAT and Organizational Development</li>
+								            	<li>VAT and Financial Performance of the Organisation</li>
+								            	<li>Input VAT and Output VAT</li>
+								            	<li>Categorize the supplies for VAT calculation</li>
+								            	<li>VAT regulations on Import and Export with reference to GCC countries and international level</li>
+								            	<li> 	VAT Documentation, Registration, VAT inclusive invoice</li>
+								            	<li>Effective calculation of VAT without errors</li>
+								            	<li>Filing VAT Returns and VAT Administration</li>
+								            </ul>
+								            <p>Who should attend the course:</p>
+								            <ul>
+								            	<li>Chief Executive Officers</li>
+								            	<li>Chief Financial Officers</li>
+								            	<li>Account and Finance Managers</li>
+								            	<li>Accountants</li>
+								            	<li>Auditors</li>
+								            	<li>Budgeting Officers</li>
+								            	<li>Senior Managers</li>
+								            </ul>
+								            </div>
+								         </div>
+							         </div>
+
+							         <div class="panel">
+								         <div  class="panel-body bs-docs-section" id="risk">
+								            <div class="page-header">
+								            	<img src="Risk.jpg" width="100%">
+								            	<h1>Risk Management</h1>
+								            	<p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            <p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            </div>
+								         </div>
+							         </div>
+
+							         <div class="panel">
+								         <div  class="panel-body bs-docs-section" id="finance">
+								            <div class="page-header">
+								            	<img src="Finance.jpg" width="100%">
+								            	<h1>Finance for Non-Finance</h1>
+								            	<p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            <p>
+								            	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								            </p>
+								            </div>
+								         </div>
+							         </div>
+      							</div>
+   							</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+
+
+				<div id="footer" class="clearfix footer" role="contentinfo">
+					<div id="global-footer">
+						<div class="container">
+							<div class="row tagline">
+								<div class="col-sm-4">
+									<h1>Learn.</h1>
+								</div>
+								<div class="col-sm-4">
+									<h1>Innovate.</h1>
+								</div>
+								<div class="col-sm-4">
+									<h1>Nurture.</h1>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-6 logo-left">
+									<div id="footer-logo">
+										<div class="footer-owl" >
+							    			<img src="smg_logo_orig_3.png" width="80px" height="80px">
+							    		</div>
+							    		<ul>
+											<li class="active"><a href="index.php">HOME</a></li>
+											<li class="active"><a href="about.html">ABOUT</a></li>
+											<li class="active"><a href="services.html">SERVICES</a></li>
+											<li class="active"><a href="contact.html">CONTACT</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-6 logo-right">
+									<div class="social">
+										<img src="googleplus.png">
+							    		<img src="twitter.png">
+							    		<img src="youtube.png">
+							    		<img src="facebook.png">
+						    		</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<p id="copy-right">&copy; Smart Education Group. Dubai, UAE.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="scrollup">
+					<a href="#"></a>
+				</div>
+	  		</div>
+	  	</div>
+	  	<script type="text/javascript" src="contactus.js"></script>
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  	<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	  	<script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+  	</body>
+</html>
