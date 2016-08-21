@@ -20,7 +20,7 @@ body{
 	line-height:1.6;
 	text-align: justify;
 	color:#696969;
-    background-image:  url(logo_x_pattern/logo_x_pattern.png);
+   /* background-image:  url(logo_x_pattern/logo_x_pattern.png); */
 }
 
 #form-button {
@@ -256,17 +256,18 @@ div#myCarousel {
 
 .three-cards>.card>.card-block {
     font-family: "Merriweather", serif;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .three-cards>.card>.card-block>h3 {
     margin-top: 10px;
-    color: white;
+    color: #18569C;
     font-size: 20px;
 }
 
 .three-cards>.card>.top {
-    background-color: rgb(7, 78, 158);
+    background-color: rgba(246, 245, 247, 0.7);
+    border-top: 4px solid rgb(7, 78, 158);
 }
 
 .small-owl {
