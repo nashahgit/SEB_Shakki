@@ -162,7 +162,18 @@
 						            	<li class="active"><a href="#">HOME</a></li>
 						            	<li><a href="about.html">ABOUT</a></li>
 						            	<li><a href="partners.html">PARTNERS</a></li>
-						            	<li><a href="courses.html">COURSES</a></li>
+						            	<li class="dropdown">
+						            		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES<span class="caret"></span></a>
+									              <ul id="drop" class="dropdown-menu">
+									                <li><a href="courses.html#cma">CMA</a></li>
+									                <li><a href="courses.html#ifrs">IFRS</a></li>
+									                <li><a href="courses.html#cgba">CGBA</a></li>
+									                <li><a href="courses.html#islamic">Islamic Banking and Finance</a></li>
+									                <li><a href="courses.html#vat">VAT</a></li>
+									                <li><a href="courses.html#risk">Risk Management</a></li>
+									                <li><a href="courses.html#finance">Finance for Non-Finance</a></li>
+									              </ul>
+						            	</li>
 						            	<li><a href="providers.html">PROVIDERS</a></li>
 						            	<li><a href="services.html">SERVICES</a></li> 
 						                <li><a href="contact.html">CONTACT</a></li>

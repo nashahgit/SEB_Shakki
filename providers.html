@@ -3,8 +3,8 @@
 <html lang="en">
 	<head>
 	   	<meta charset="utf-8">
-	   	<title> Contact | Smart Education Group</title>
-	   	<meta name="description" content="Contact Page of Smart Education Group Dubai U.A.E, an Education Organization Consultancy">
+	   	<title> Partners | Smart Education Group</title>
+	   	<meta name="description" content="Partners Page of Smart Education Group Dubai U.A.E, an Education Organization Consultancy">
 		<meta name="keywords" content="HTML,CSS,JavaScript">
 		<meta name="author" content="Nasruddin Shah"> 
 	   	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
 	   	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	   	<script src="script.js"></script>
-	   	<script>
+		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -35,6 +35,74 @@
 	</head>
   	<body>
   		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="loader.gif"></div>
+
+  		<!-- form button-->
+  		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
+	    	Contact Us
+		</button>
+
+		<!-- Modal start -->
+		<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal">
+		                    <span aria-hidden="true">&times;</span>
+		                    <span class="sr-only">Close</span>
+		                </button>
+		                <h3 class="modal-title" id="myModalLabel">
+		                    Contact Us
+		                </h3>
+		            </div>
+		            
+		            <!-- Modal Body -->
+		            <div class="modal-body">
+		                <div class="row">
+							<div class="col-sm-12">
+							    <form role="form" id="contactForm">
+							     	<div class="form-group col-sm-12">
+							            <!--label for="name" class="h4">Name</label-->
+							            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="company" class="h4">Company</label-->
+							            <input type="text" class="form-control" id="company" placeholder="Company name" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="email" class="h4">Email</label-->
+							            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="country" placeholder="Country" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="designation" class="h4">Designation</label-->
+							            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+							        </div>
+							        <div class="form-group col-sm-12">
+							            <!--label for="message" class="h4 ">Message</label-->
+							            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+							        </div>
+							        <button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>
+							    </form>
+							    <div id="msgprocess" class="h3 text-center hidden">Processing...</div>
+							    <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+							</div>
+						</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
 
 	  	<div id="seg-wrap">
 	  		<div id="seg-ccontent">
@@ -73,9 +141,9 @@
 									                <li><a href="courses.html#finance">Finance for Non-Finance</a></li>
 									              </ul>
 						            	</li>
-						            	<li><a href="providers.html">PROVIDERS</a></li>
+						            	<li class="active"><a href="providers.html">PROVIDERS</a></li>
 						            	<li><a href="services.html">SERVICES</a></li> 
-							            <li class="active"><a href="contact.html">CONTACT</a></li>
+							            <li><a href="contact.html">CONTACT</a></li>
 							            
 						          	</ul>
 						        </div><!--/.nav-collapse -->
@@ -104,129 +172,39 @@
             	</div>
             	<!-- Carousel
     			================================================== -->
-				<div class="container margin-bottom-20">
-					<div class="row">
-						<div class="col-sm-12" id="contact-us">
-							<div class="card"> 
-					    		<div class="card-block">
-								    <h2 class="card-title panel-heading">Contact</h2>
-								    <div class="row">
-								    	<div class="col-sm-4">
-											<div class="panel">
-												<div class="panel-heading">
-													<h3><i class="icon-pushpin main-color"></i> Our office</h3>
-												</div>
-												<div class="panel-body">
-													<address>
-													<strong>Smart Education Group</strong><br>
-													P.O. Box 7073, UAQ<br>
-													Dubai, United Arab Emirates<br><br>
-													<i class="icon-phone-sign"></i>Email: info@smarteducationgroup.org
-													<br>
-													<i class="icon-phone-sign"></i>Website: www.smarteducationgroup.org
-													</address>
-												</div>
-											</div>
-			
-											<div class="panel">
-												<div class="panel-heading">
-												  <h3><i class="icon-time main-color"></i> Business hours</h3>
-												</div>
-												<div class="panel-body">
-													<table class="table table-hover">
-														<thead>
-															<tr>
-															    <th>Day</th>
-																<th>Time</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr class="success">
-																<td>Saturday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="success">
-															  	<td>Sunday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="success">
-															  	<td>Monday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="success">
-															  	<td>Tuesday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="success">
-															  	<td>Wednesday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="success">
-															  	<td>Thursday</td>
-															  	<td>8:00 AM to 5:00 PM</td>
-															</tr>
-															<tr class="danger">
-																<td>Friday</td>
-															  	<td>day off</td>
-															</tr>
-															
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-8">
-											<div class="panel">
-												<div class="panel-heading">	
-													<h3 class="">
-														<i class="icon-envelope main-color"></i>
-														Feel free to contact us
-													</h3>
-												</div>
-												<div class="panel-body">	
-												    <form role="form" id="contactForm">
-												     	<div class="form-group col-sm-12">
-												            <!--label for="name" class="h4">Name</label-->
-												            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="company" class="h4">Company</label-->
-												            <input type="text" class="form-control" id="company" placeholder="Company name" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="designation" class="h4">Designation</label-->
-												            <input type="text" class="form-control" id="designation" placeholder="Designation" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="designation" class="h4">Designation</label-->
-												            <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="email" class="h4">Email</label-->
-												            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="designation" class="h4">Designation</label-->
-												            <input type="text" class="form-control" id="country" placeholder="Country" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="designation" class="h4">Designation</label-->
-												            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-												        </div>
-												        <div class="form-group col-sm-12">
-												            <!--label for="message" class="h4 ">Message</label-->
-												            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-												        </div>
-												        <button type="submit" id="form-submit" class="btn btn-success pull-right ">Submit</button>
-										    		</form>
-										    		<div id="msgprocess" class="h3 text-center hidden">Processing...</div>
-							    					<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
-										    	</div>
-										    </div>
-										</div>
 
+								<div class="container margin-bottom-20">
+					<div class="row">
+						<div class="col-sm-12" id="providers">
+							<div class="card"> 
+					    		<div class="card-block services-block">
+								    <h2 class="card-title panel-heading">Course Providers</h2>
+
+									<div class="panel provider">
+										<h3 class="panel-heading" >Wisdom Educational Institute, Dubai </h3>
+									   	<div class="row panel-body">
+								    		<div class="col-sm-2">
+											   	<img class="img-responsive" src="wisdom-logo.png" width="100%" alt="Card image">
+											</div>
+								    		<div class="col-sm-10">
+											   	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wisdom Education Institute is a leading Educational Group in UAE operating in Dubai, Abu Dhabi and Sharjah approved by Ministry of Education, UAE, with permission to impart training for different educational programs and management development programs operating for the past 25 years. Wisdom Education Group also has its branches in UK, Oman and India. Wisdom offers highest level of technical expertise and regional experience to its valued clients in UAE through its institutes in Dubai, Abu Dhabi & Sharjah.</p>
+											   	<a class="btn btn-primary" href="http://www.wisdom.ae" target="_blank">Read more</a>
+											</div>											
+										</div>	
 									</div>
-							  	</div>
+									<div class="panel provider">
+										<h3 class="panel-heading" >Learn Well Management Training Center, Abu Dhabi </h3>
+									   	<div class="row panel-body">
+								    		<div class="col-sm-2">
+											   	<img class="img-responsive" src="learnwell-logo.png" width="100%" alt="Card image">
+											</div>
+								    		<div class="col-sm-10">
+											   	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn Well Management Training Center is a goal-driven Technical and Professional Training Service Provider situated in Sheikh Rashid Street (Airport Road), Abu Dhabi, UAE. Learn Well MTC introduces completely current and meticulously prepared training programs to individuals thus administering the Industries' Operational Improvement and Efficiency Increase. We offer courses in Constructional Designing, Building Information Modeling, Specialized Courses in Civil Engineering Level 1 and 2, Finance and Accounting, International Management Certifications, Project Tools, Certifications in Oil and Gas for fresher and Language.</p>
+											   	<a class="btn btn-primary" href="http://www.learnwellme.com" target="_blank">Read more</a>
+											</div>											
+										</div>	
+									</div>
+								</div>
 							</div>
 					    </div>
 					</div>
