@@ -280,8 +280,8 @@
 							  	</div>
 							  	<img class="img-responsive" src="operate_2.png" width="100%" alt="Card image">
 								<div class="card-block">
-								   <p class="card-text">We help educational institutions in the Start Up mode. Make a detailed study and suggest improvement plans to increase...</p>
-								   <a href="services.html" class="btn btn-primary">Read More</a>
+								   <p class="card-text">We facilitate a number of accounts and management courses in association with some leading training institutions..</p>
+								   <a href="courses.html" class="btn btn-primary">Know More</a>
 								</div>
 							</div>
 						</div>
@@ -424,8 +424,8 @@
 												<h4><?php echo $post->post_title; ?></h4>
 											</div>
 											<div class="panel-body">
-												<p><?php echo "Job Id : " . $post->post_jobId; ?></p>
-												<p><?php echo "Job Description : " . $post->post_content; ?></p>
+												<p><span style="font-weight:800;color:#18569C;">Job Id :</span> <?php echo  $post->post_jobId; ?></p>
+												<p><span style="font-weight:800;color:#18569C;">Job Description :</span> <?php echo  $post->post_content; ?></p>
 											</div>
 										</div>
 										<?php break; ?>
