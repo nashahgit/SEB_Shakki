@@ -34,7 +34,7 @@ body{
     background-color: #DC0F0F;
     z-index: 999;
     border-color: rgb(220, 15, 15);
-    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+    box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
 }
 
 #cma-program-button {
@@ -51,7 +51,7 @@ body{
     -moz-animation:myfirst 1s infinite; /* Firefox */
     -webkit-animation:myfirst 1s infinite; /* Safari and Chrome */
     z-index: 999;
-    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+    box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
 }
 
 @-moz-keyframes myfirst /* Firefox */
@@ -114,7 +114,7 @@ body{
 }
 
 .navbar>.container {
-    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+    box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
 }
 
 
@@ -178,9 +178,9 @@ body{
     position: relative;
     width: 100%;
     right: 0px;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
-    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
+    box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
 }
 
 div#myCarousel {
@@ -248,9 +248,9 @@ div#myCarousel {
     display: block;
     margin-bottom: .75rem;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
-    box-shadow: 0px 0px 7px 0px rgba(78,1,82,1);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
+    box-shadow: 0px 0px 4px 0px rgba(78,1,82,1);
     border-radius: .25rem;
 }
 
@@ -279,7 +279,7 @@ div#myCarousel {
 #myTab>.card {
     padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
-    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    box-shadow: 0px 0px 4px 0px rgba(78, 1, 82, 0.99);
     
 }
 
@@ -313,7 +313,7 @@ div#myCarousel {
     height: auto;
     background-color: #18569C;
     margin-right: 15px;
-    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    box-shadow: 0px 0px 4px 0px rgba(78, 1, 82, 0.99);
 }
 
 #seminars>.seminar {
@@ -356,7 +356,7 @@ div#myCarousel {
 #jobs>.card,  #about>.card, #partners>.card, #contact-us>.card, #team>.card, #board>.card, #services>.card, #main-partners>.card, #courses>.card, #providers>.card{
     padding: 15px;
     background-color: rgba(246, 245, 247, 0.7);
-    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    box-shadow: 0px 0px 4px 0px rgba(78, 1, 82, 0.99);
     
 }
 
@@ -452,7 +452,7 @@ div#myCarousel {
     display: none;
     background-color: #DC0F0F;
     border-radius : 100%;
-    box-shadow: 0px 0px 7px 0px rgba(78, 1, 82, 0.99);
+    box-shadow: 0px 0px 4px 0px rgba(78, 1, 82, 0.99);
 }
 
 .scrollup>a {
@@ -643,6 +643,8 @@ div#myCarousel {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
     background-color: #0088cc;
 }*/
+
+
 
 .bs-docs-sidebar .nav>li>a {
     padding: 8px 20px;
@@ -864,7 +866,7 @@ div#myCarousel {
 @media (min-width:768px) {
 
     .bs-docs-sidebar {
-        margin-top: 50px;
+        /*margin-top: 50px;*/
         padding-left: 20px;
     }
 
@@ -909,7 +911,7 @@ div#myCarousel {
 
     .bs-docs-sidebar.affix {
         position: fixed;
-        top: 50px;
+        top: 60px;
     }
 
     .row {
