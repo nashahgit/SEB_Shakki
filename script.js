@@ -62,8 +62,10 @@
 			    }
 			};
 
+
+			/* code for red scroll up button */
 			$(window).scroll(function () {
-		        if ($(this).scrollTop() > 400) {
+		        if ($(this).scrollTop() > 100) {
 		            $('.scrollup').fadeIn();
 		        } else {
 		            $('.scrollup').fadeOut();
@@ -76,6 +78,7 @@
 		        }, 600);
 		        return false;
 		    });
+
 
 		    switchIn = function () {
 			    $('.seminar').fadeToggle(function() {
