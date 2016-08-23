@@ -13,6 +13,9 @@
 	   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
 	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 	   	<link rel="stylesheet" href="colorbox.css" type="text/css">
+
+	   	<link rel="stylesheet" type="text/css" href="http://learnwellme.com/css/animate.min.css">
+
 	   	<link rel="stylesheet" type="text/css" href="style.css">
 	   	<!--link rel="stylesheet" type="text/css" href="homepage.min.css"-->
 	   	<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/dist/css/bootstrap-responsive-tabs.css">
@@ -204,7 +207,7 @@
             	</div>
             	<!-- Carousel
     			================================================== -->
-			    <div id="myCarousel" class="carousel slide margin-bottom-20" data-ride="carousel">
+			    <div id="myCarousel" class="carousel slide margin-bottom-20 fadein" data-ride="carousel">
 			      <!-- Indicators -->
 			      <!--ol class="carousel-indicators">
 			        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -228,7 +231,7 @@
 			            <div class="carousel-caption">
 			              <p><span>Experienced </span></p> 
 			              <p><span> in Accounting and Finance?</span></p>
-			              <p><span> You can be a<span style="background-color:#DC0F0F;">CMA</span>qualified</span></p>
+			              <p><span> You can be a qualified</span><span style="background-color:#DC0F0F;">CMA</span></p>
 			            </div>
 		
 			        </div>
@@ -261,7 +264,7 @@
 			    </div><!-- /.carousel -->
 			    <div class="container margin-bottom-20">
 			    	<div class="row">
-			    		<div class="col-sm-4 three-cards">
+			    		<div class="col-sm-4 three-cards fadein one">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Build a Plan</h3>
@@ -273,7 +276,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4 three-cards top">
+						<div class="col-sm-4 three-cards top fadein two">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Courses</h3>
@@ -285,7 +288,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4 three-cards">
+						<div class="col-sm-4 three-cards fadein three">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Transfer Knowledge</h3>
@@ -301,7 +304,7 @@
 				</div>
 				<div class="container margin-bottom-20">
 					<div class="row ">
-						<div class="col-sm-7" id="myTab">
+						<div class="col-sm-7 " id="myTab">
 							<div class="card">
 								<div class="card-block">
 									<h3 class="card-title">More Services</h3>

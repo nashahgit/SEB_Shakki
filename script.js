@@ -52,6 +52,7 @@
 	    			}
   				});
 			});
+
 			/* code for hiding the top nav bar when reached the bottom */
 	  		window.onscroll = function(ev) {
 			    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
