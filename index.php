@@ -271,7 +271,7 @@
 							  	</div>
 							  	<img class="img-responsive" src="plan.png" width="100%" alt="Card image">
 								<div class="card-block">
-								   <p class="card-text">Through our ‘build a plan’ service, we help to prepare academic and educational plans for setting up institutes like...</p>
+								   <p class="card-text">With our ‘build a plan’ service, we can assist in preparing academic and educational plans for setting up establishments..</p>
 								   <a href="services.html" class="btn btn-primary">Read More</a>
 								</div>
 							</div>
@@ -295,7 +295,7 @@
 							  	</div>
 							  	<img class="img-responsive" src="transfer_1.jpg" width="100%" alt="Card image">
 								<div class="card-block">
-								   <p class="card-text">We act as a bridge between various professional bodies across the globe and educational institutions in the Middle East...</p>
+								   <p class="card-text">We act as a bridge between various professional bodies across the globe and educational institutions in Middle East..</p>
 								   <a href="services.html" class="btn btn-primary">Read More</a>
 								</div>
 							</div>
