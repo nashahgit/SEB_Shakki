@@ -207,7 +207,7 @@
             	</div>
             	<!-- Carousel
     			================================================== -->
-			    <div id="myCarousel" class="carousel slide margin-bottom-20 fadein" data-ride="carousel">
+			    <div id="myCarousel" class="carousel slide margin-bottom-20 " data-ride="carousel">
 			      <!-- Indicators -->
 			      <!--ol class="carousel-indicators">
 			        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -264,7 +264,7 @@
 			    </div><!-- /.carousel -->
 			    <div class="container margin-bottom-20">
 			    	<div class="row">
-			    		<div class="col-sm-4 three-cards fadein one">
+			    		<div class="col-sm-4 three-cards one">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Build a Plan</h3>
@@ -276,7 +276,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4 three-cards top fadein two">
+						<div class="col-sm-4 three-cards top two">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Courses</h3>
@@ -288,7 +288,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4 three-cards fadein three">
+						<div class="col-sm-4 three-cards three">
 				    		<div class="card">
 				    		  	<div class="card-block top">
 								    <h3 class="card-title">Transfer Knowledge</h3>
