@@ -129,9 +129,11 @@
 		                <div class="row">
 							<div class="col-sm-12">
 								<div id="cma-program-poster">
-									<img class="img-responsive" src="CMA_8332.jpg" width="70%">
-									<br>
-									<a target="_blank" href="CMA-Nov-2016-SEG.pdf"><div type="submit" id="download-pdf" class="btn btn-success img-responsive">Download PDF</div></a>
+									<!-- <img class="img-responsive" src="CMA_8332.jpg" width="70%"> -->
+									<a target="_blank" href="CMA_April_2017_Brochure_new.pdf">
+										<img class="img-responsive" src="flyer.jpg" width="70%">
+										<!-- <div type="submit" id="download-pdf" class="btn btn-success img-responsive">Download PDF</div> -->
+									</a>
 								</div>
 							</div>
 						</div>
