@@ -7,6 +7,14 @@
 
 		  	document.getElementById("hideAll").style.display = "block";
 
+		  	$("#popup").hide().fadeIn(1000);
+
+		    //close the POPUP if the button with id="close" is clicked
+		    $("#close").on("click", function (e) {
+		        e.preventDefault();
+		        $("#popup").fadeOut(1000);
+		    });
+
 	  		$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
 		    	e.preventDefault();
 		        $( this ).tab( 'show' );

@@ -40,6 +40,18 @@
   	<body>
   		<div style="display: none" id="hideAll"><!--img src="smg_logo_orig_2.png" width="20%"--><img class="img-responsive" src="loader.gif"></div>
 
+  		<div id="popup" class="popup panel panel-primary">
+        
+	        <a target="_blank" href="VAT-ICMA-Australia.pdf"><img src="WHATSUP-VAT.jpg" width="100%" alt="popup"></a>
+	            
+	        <div class="panel-footer">
+	            <button id="close" class="btn btn-sm btn-primary">Close</button>
+	        </div>
+	            
+	            <!-- and finally we close the POPUP FRAME-->
+	            <!-- everything on it will show up within the popup so you can add more things not just an image -->
+	    </div>
+
   		<!-- form button-->
   		<button class="btn btn-primary"  id="form-button" data-toggle="modal" data-target="#myModalHorizontal">
 	    	Contact Us
@@ -130,7 +142,7 @@
 							<div class="col-sm-12">
 								<div id="cma-program-poster">
 									<!-- <img class="img-responsive" src="CMA_8332.jpg" width="70%"> -->
-									<a target="_blank" href="CMA_April_2017_Brochure_new.pdf">
+									<a target="_blank" href="CMA_November_2017.pdf">
 										<img class="img-responsive" src="flyer.jpg" width="70%">
 										<!-- <div type="submit" id="download-pdf" class="btn btn-success img-responsive">Download PDF</div> -->
 									</a>
