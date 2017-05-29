@@ -143,7 +143,7 @@
 								<div id="cma-program-poster">
 									<!-- <img class="img-responsive" src="CMA_8332.jpg" width="70%"> -->
 									<a target="_blank" href="CMA_November_2017.pdf">
-										<img class="img-responsive" src="flyer.jpg" width="70%">
+										<img class="img-responsive" src="CMA_november_2017.jpg" width="70%">
 										<!-- <div type="submit" id="download-pdf" class="btn btn-success img-responsive">Download PDF</div> -->
 									</a>
 								</div>
